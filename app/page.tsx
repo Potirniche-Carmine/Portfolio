@@ -18,7 +18,7 @@ const projects = [
     description: "A full-stack invoicing and quote management platform tailored for locksmith businesses, featuring VIN decoding, PDF generation, customer management, and secure authentication.",
     techStack: ["Next.js", "React", "Typescript", "Tailwind CSS", "PostgreSQL", "Docker", "Linux", "CI/CD", "AWS S3", "NextAuth.js", "Puppeteer"],
     githubUrl: "https://github.com/Potirniche-Carmine/InvoiceSync",
-    videoUrl: "/videos/invoice-sync-demo.mp4",
+    videoUrl: "https://www.youtube.com/embed/noBHiKxODVY?si=rdtNLtBgRFAWW-lW",
     imageUrl: "/invoicesync-page.png",
   },
    {
