@@ -1,0 +1,131 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.38in}
+\addtolength{\evensidemargin}{-0.38in}
+\addtolength{\textwidth}{0.76in}
+\addtolength{\topmargin}{-0.50in}
+\addtolength{\textheight}{1.00in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, topsep=0pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1.5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, itemsep=2.6pt, topsep=1pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1.5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Carmine Potirniche} \\ \vspace{5pt}
+    \normalsize (725) 910-8625 $|$
+    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com} $|$
+    \href{https://linkedin.com/in/carmineap}{linkedin.com/in/carmineap} $|$
+    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}
+\end{center}
+\vspace{-3pt}
+
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Umbratic}{Reno, NV}
+    {Founder \& Lead Engineer $|$ Private AI platform}{Mar. 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Build a private AI workspace in Electron/React, with a Rust agent runtime and Go gateway for local llama.cpp and company-managed vLLM.}
+      \resumeItem{Implement workspace tools, context compression, code review, and SSH task execution; enforce tool permissions and keep model access behind the authenticated gateway.}
+      \resumeItem{Built document ingestion and Qdrant retrieval with team access filters, plus an admin console for model processes, user enrollment, and device revocation.}
+      \resumeItem{Built tools to create and edit documents, spreadsheets, presentations, and PDFs; added automated file checks and tests that verify spreadsheet content after edits.}
+      \resumeItem{Reduced search latency from 15 seconds to \textbf{16 ms}, cold starts by \textbf{96\%}, and idle memory by \textbf{88\%} during the native rewrite.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Crytica Security}{Reno, NV}
+    {Software Engineer $|$ Cybersecurity startup}{Nov. 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Lead a multi-tenant admin console in JavaScript and PHP over a C backend, with centralized authorization and parameterized SQL. Drive requirements through release with leadership, operations, and engineering.}
+      \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}; used parallel subprocess isolation to contain failures and cut synchronization time \textbf{85\%}.}
+      \resumeItem{Built a C deployment CLI that cut deployment from over an hour to \textbf{under 5 minutes}, with timeouts, retries, validation, and \textbf{100+ tests}.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{UpDrafted} $|$ \emph{Creator \& Lead Engineer, Recruiting Platform}}{May 2025 -- May 2026}
+    \resumeItemListStart
+      \resumeItem{Built two Next.js/TypeScript apps for athlete recruiting and administration, with sport and position filters, connections, transfer verification, and moderation workflows.}
+      \resumeItem{Designed shared PostgreSQL/Drizzle data models with \textbf{14 row-level security policies} and transaction-scoped user context; encrypted stored messages with AES-256-GCM.}
+      \resumeItem{Integrated Stripe subscriptions, signed webhooks, and plan-based usage limits; built Cloudflare R2 file storage and Docker deployment pipelines with GitHub Actions.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Infernal} $|$ \emph{Independent Developer, Multiplayer Game}}{In development}
+    \resumeItemListStart
+      \resumeItem{Build a Unity/C\# game with FishNet networking, server-controlled combat and team visibility, PlayFab matchmaking, and dedicated server lifecycle management.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Nevada, Reno}{Reno, NV}
+    {B.S. in Computer Science and Engineering, Minor in Statistics}{May 2025}
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
+  \normalsize\item{
+    \textbf{Languages:} Rust, Go, C, C\#, TypeScript/JavaScript, Python, SQL, PHP \\
+    \textbf{AI Systems:} Agent runtimes, retrieval/RAG, vLLM, llama.cpp, Qdrant, PyTorch, LoRA \\
+    \textbf{Systems:} Electron, React, Next.js, PostgreSQL, Linux, Docker, Git, REST/SSE, Unity, CI/CD \\
+    \textbf{Areas:} Distributed systems, concurrency, access control, performance optimization, automated testing
+  }
+\end{itemize}
+
+\end{document}

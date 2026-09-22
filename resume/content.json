@@ -1,0 +1,78 @@
+{
+  "name": "Carmine Potirniche",
+  "title": "Software Engineer | AI & Product Systems",
+  "email": "potirnichecarmine@gmail.com",
+  "phone": "(725) 910-8625",
+  "linkedin": "https://linkedin.com/in/carmineap",
+  "github": "https://github.com/Potirniche-Carmine",
+  "experience": [
+    {
+      "name": "Umbratic",
+      "role": "Founder & Lead Engineer | Private AI platform",
+      "dates": "Mar. 2025 - Present",
+      "location": "Reno, NV",
+      "bullets": [
+        "Build a private AI workspace in Electron/React, with a Rust agent runtime and Go gateway for local llama.cpp and company-managed vLLM.",
+        "Implement workspace tools, context compression, code review, and SSH task execution; enforce tool permissions and keep model access behind the authenticated gateway.",
+        "Built document ingestion and Qdrant retrieval with team access filters, plus an admin console for model processes, user enrollment, and device revocation.",
+        "Built tools to create and edit documents, spreadsheets, presentations, and PDFs; added automated file checks and tests that verify spreadsheet content after edits.",
+        "Reduced search latency from 15 seconds to <b>16 ms</b>, cold starts by <b>96%</b>, and idle memory by <b>88%</b> during the native rewrite."
+      ]
+    },
+    {
+      "name": "Crytica Security",
+      "role": "Software Engineer | Cybersecurity startup",
+      "dates": "Nov. 2025 - Present",
+      "location": "Reno, NV",
+      "bullets": [
+        "Lead a multi-tenant admin console in JavaScript and PHP over a C backend, with centralized authorization and parameterized SQL. Drive requirements through release with leadership, operations, and engineering.",
+        "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>; used parallel subprocess isolation to contain failures and cut synchronization time <b>85%</b>.",
+        "Built a C deployment CLI that cut deployment from over an hour to <b>under 5 minutes</b>, with timeouts, retries, validation, and <b>100+ tests</b>."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "UpDrafted",
+      "role": "Creator & Lead Engineer, Recruiting Platform",
+      "dates": "May 2025 - May 2026",
+      "bullets": [
+        "Built two Next.js/TypeScript apps for athlete recruiting and administration, with sport and position filters, connections, transfer verification, and moderation workflows.",
+        "Designed shared PostgreSQL/Drizzle data models with <b>14 row-level security policies</b> and transaction-scoped user context; encrypted stored messages with AES-256-GCM.",
+        "Integrated Stripe subscriptions, signed webhooks, and plan-based usage limits; built Cloudflare R2 file storage and Docker deployment pipelines with GitHub Actions."
+      ]
+    },
+    {
+      "name": "Infernal",
+      "role": "Independent Developer, Multiplayer Game",
+      "dates": "In development",
+      "bullets": [
+        "Build a Unity/C# game with FishNet networking, server-controlled combat and team visibility, PlayFab matchmaking, and dedicated server lifecycle management."
+      ]
+    }
+  ],
+  "education": {
+    "name": "University of Nevada, Reno",
+    "degree": "B.S. in Computer Science and Engineering, Minor in Statistics",
+    "location": "Reno, NV",
+    "date": "May 2025"
+  },
+  "skills": [
+    [
+      "Languages",
+      "Rust, Go, C, C#, TypeScript/JavaScript, Python, SQL, PHP"
+    ],
+    [
+      "AI Systems",
+      "Agent runtimes, retrieval/RAG, vLLM, llama.cpp, Qdrant, PyTorch, LoRA"
+    ],
+    [
+      "Systems",
+      "Electron, React, Next.js, PostgreSQL, Linux, Docker, Git, REST/SSE, Unity, CI/CD"
+    ],
+    [
+      "Areas",
+      "Distributed systems, concurrency, access control, performance optimization, automated testing"
+    ]
+  ]
+}

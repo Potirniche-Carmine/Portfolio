@@ -1,0 +1,78 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{iftex}
+\ifPDFTeX
+  \input{glyphtounicode}
+\fi
+
+\pagestyle{empty}
+
+\addtolength{\oddsidemargin}{-0.38in}
+\addtolength{\evensidemargin}{-0.38in}
+\addtolength{\textwidth}{0.76in}
+\addtolength{\topmargin}{-0.50in}
+\addtolength{\textheight}{1.00in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\scshape\raggedright\large}
+  {}{0em}{}
+  [\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{5pt}
+
+\ifPDFTeX
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \item
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+    \end{tabular*}\vspace{2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt, topsep=0pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1.5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.24in, itemsep=2.6pt, topsep=1pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1.5pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Carmine Potirniche} \\ \vspace{5pt}
+    \normalsize (725) 910-8625 $|$
+    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com} $|$
+    \href{https://linkedin.com/in/carmineap}{linkedin.com/in/carmineap} $|$
+    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}
+\end{center}
+\vspace{-3pt}
+
+%% RESUME_CONTENT %%
+
+\end{document}
