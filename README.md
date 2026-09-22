@@ -17,6 +17,12 @@ npm run build
 
 The build copies the site to `dist/`. Use that folder as the output directory on a static host. `index.html` contains the full portfolio; `404.html` is the error page. The sitemap has one portfolio URL. The build also removes the four separate HTML pages from earlier builds.
 
+## Coolify deployment
+
+For the existing Nixpacks server application, use `npm run build` as the build command, `npm start` as the start command, and `3000` as the exposed internal port. Keep **Is it a static site?** disabled for this setup. Production serves only `dist/` and listens on `0.0.0.0:3000`, so the container proxy can reach it. If `PORT` is set, the exposed port must match it. `HOST` can override the bind address. Local development still defaults to `127.0.0.1:4173`.
+
+Run `npm test` to check production access through another loopback address, public downloads, and exclusion of source files. Redeploy after pulling a server change; restarting the old image does not include new code.
+
 ## Content and controls
 
 The page contains an introduction, Umbratic, UpDrafted, Infernal, Crytica, education, and contact details. There is no repeated name header or project index heading. Both Umbratic text links open umbratic.ai. The résumé links download only the PDF. The build excludes the LaTeX source and internal résumé files.
