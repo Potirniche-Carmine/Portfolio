@@ -1,0 +1,5 @@
+Generated with the built-in imagegen tool on October 2, 2026.
+Output used by the site: assets/images/hero-metal.jpg
+Transparent background: false
+
+Create a premium restrained abstract photographic background for a software engineer's portfolio hero. Landscape horizontal 3:2 image. A dark graphite aluminum surface with a single broad softly folded brushed-metal ribbon curving from lower right to upper right, with precise silver edges and a faint cool desaturated blue reflection. Sophisticated physical materials, macro product photography, soft directional studio light, quiet architectural shape, matte charcoal and silver, subtle natural texture. Most of the center is uncluttered dark negative space, suitable for a real software screenshot to be overlaid by the website later. No text, no letters, no logos, no interface, no diagram, no grid, no glowing neon, no colored gradient blobs, no artificial futuristic circuitry. The result is an atmospheric background, not a fake software product or device. Keep contrast restrained with rich detail, Apple product photograph quality.

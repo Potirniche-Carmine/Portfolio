@@ -1,6 +1,19 @@
 # Resume source notes
 
-Reviewed on September 21, 2026. The supplied LaTeX is the format source. Its preamble, header, and layout commands are unchanged. The text was shortened to give UpDrafted more detail and include Infernal on one page.
+Revised through October 5, 2026. The latest pasted LaTeX is the format source. Software Engineer remains the professional identity, with systems design and end-to-end engineering ownership leading the copy. Agent engineering is demonstrated through implementation, development workflows, and technical skills. Earlier dates and measured outcomes are retained with the limits recorded below.
+
+## Agent engineering evidence reviewed in this revision
+
+- `../Umbratic/packages/runner/src/loop_runtime.rs`: repeated model/tool execution, failure and repeated-call limits, cancellation, mid-run steering, and saved conversation state after settled steps. This is a bounded tool loop, not a claim of unattended perpetual execution.
+- `../Umbratic/packages/runner/src/tool_scheduling.rs`: concurrent independent tool operations, with barriers around commands, patches, and conflicting file access.
+- `../Umbratic/packages/runner/src/compaction.rs`, `context.rs`, and `conversation_state.rs`: context compaction, bounded retained tool output, and durable summary/conversation restoration.
+- `../Umbratic/packages/runner/src/skill_preflight.rs` and `apps/desktop/src/main/skills.ts`: skill discovery, explicit skill loading before model requests, cached skill contents, and lifecycle events.
+- `../Umbratic/apps/desktop/src/main/system-skills/`: reusable product skills. The skill-creator, Git worktree, and spreadsheet skills were read for triggering, progressive references, isolation, deterministic tooling, and output checks.
+- `../Umbratic/apps/desktop/src/main/telemetry.ts` and `telemetrySync.ts`: operational event summaries and redacted telemetry delivery.
+- `../Infernal/.agents/skills/agent-orchestration/SKILL.md`, `building-and-verifying/SKILL.md`, and the skill-writing README: bounded specialists, owned files, shared-editor coordination, patch integration, real gameplay inspection, and test-and-fix workflows.
+- `../RobloxGames/.agents/skills/roblox-studio-workflow/SKILL.md`, `roblox-prediction-replay/SKILL.md`, and `roblox-live-services/SKILL.md`: reusable workflows for source identity, fresh native sessions, prediction/replay boundaries, receipts, persistence, and meaningful validation.
+
+The user identifies these projects and authored skills as agent-assisted work. Installed third-party reference skills are not claimed as original authored work. The portfolio describes multi-agent development as the user's engineering workflow, not as an unverified built-in Umbratic feature. Automation refers to repeatable build/release/check pipelines and feedback loops; no scheduler, continuous unattended service, or new performance gain is implied.
 
 ## Umbratic
 
@@ -20,6 +33,8 @@ The search result of 15 seconds to 16 ms, 96% lower cold start time, and 88% low
 ## Crytica Security
 
 The supplied resume and the local portfolio are the sources. No Crytica code repository was available in the provided workspace. The role, dates, scope, 9+ ledgers, 85% synchronization reduction, deployment time, and 100+ tests were retained from the supplied information. These figures were not measured again.
+
+On October 2, 2026, the user confirmed coding-agent use in general software work, a full administration/configuration console, and an end-to-end installer. The copy reflects that scope. It does not claim Crytica has an agent platform, parallel agent orchestration, or a new measured productivity benefit from agents.
 
 ## UpDrafted
 
@@ -44,6 +59,35 @@ Local repository: `../Infernal`, commit `c499a0b`, plus existing local changes. 
 - `Assets/_Infernal/Scripts/Runtime/Backend/Backend.cs`: PlayFab matchmaking.
 - FishNet networking and Unity/C# are present in the project code and packages.
 
-## Validation
+## Validation from the initial revision
 
-The resume build checks the page count, US Letter size, text extraction, and LaTeX overflow. The final page was rendered with Poppler at 160 DPI and inspected. The contact header and layout were compared with a render of the supplied LaTeX. The project applications were read as evidence; their full test suites were not run for this document task.
+On October 2, 2026, the final source compiled successfully in Codex's built-in LaTeX editor. The downloadable PDF was exported with Tectonic 0.17.0; the build verified one US Letter page, extractable text, and no LaTeX overflow. Poppler rendered the final page at 160 DPI for visual inspection. The last text baseline leaves approximately 40 points (0.55 inch) at the bottom, with the original font sizes preserved. Delivery and portfolio-download PDFs are byte-identical, and the generated LaTeX matches `content.json` and `template.tex`.
+
+Portfolio checks passed for local links, anchors, accessible references, the production server, source-file exclusion, and the PDF download. Browser review covered desktop, 768-pixel tablet, 390-pixel phone, and 320-pixel narrow-phone widths with no horizontal overflow. All seven images loaded; image navigation, Escape dismissal, and return of focus were exercised. No browser console errors or warnings were observed. Project repositories were read as evidence; their full application/game test suites were not run for this portfolio and document task.
+
+## Follow-up design revision
+
+The user requested removal of Rink Rumble, faster portfolio scanning, the three named design skills, and no resume subheader under the name. Rink Rumble was removed from the resume content and portfolio. Agent engineering remains distributed through supported experience and skills.
+
+The open LaTeX source was edited in place and validated with the native compiler, including a one-page shipout guard. The user explicitly authorized refreshing the existing downloadable PDF. T1 encoding was added after visual inspection caught Helvetica falling back to regular Latin Modern under XeTeX. The exported PDF must pass the existing one-page, Letter-size, overflow, and extractable-text checks.
+
+The portfolio now places the professional identity, agent engineering, a real product image, and three historical outcomes in the first desktop viewport. Project details are progressively disclosed in a compact explorer. Authentic screenshot bytes remain unchanged; the generated graphite backdrop is decorative. Motion is brief and responds to reduced-motion settings.
+
+## Verification before the latest wording revision, October 5, 2026
+
+The same open LaTeX source passes the native compiler. Source generation matches `content.json` and `template.tex`. The downloadable, delivery, and built-site PDFs are byte-identical, with one Letter page, no subheader, no Rink Rumble, and 41.8 points below the last text. Visual inspection confirms the intended sans-serif regular, bold, and italic fonts.
+
+The first-screen proof strip ends at 684 pixels in a 1280 by 720 desktop viewport and 808 pixels on a 390 by 844 phone, without horizontal overflow. The prior gallery and keyboard checks covered all six images, project selection/collapse, Escape, and focus return. The final mobile asset selects the 45 KB image. Build, references, production reachability, download, and source-exclusion checks pass.
+
+Lighthouse 13.5.0 local reports: desktop 100 performance, 100 accessibility, 100 best practices, 100 SEO; mobile 91 performance, 100 accessibility, 100 best practices, 100 SEO. LCP is 0.7 seconds desktop and 3.4 seconds simulated mobile, with zero layout shift and total blocking time. The desktop report was run October 5; the mobile report was run October 2, before the final small contrast-preserving project-entry adjustment and font MIME addition. These results describe local lab tests, not deployed-site field performance. Source updates are local; no publication or deployment was performed.
+
+
+## Latest wording and hero revision, October 5, 2026
+
+The user's new pasted LaTeX template replaces the previous sans-serif layout. Its preamble, font settings, macros, margins, spacing, contact header, section order, and bullet count are preserved exactly. The new content emphasizes architecture, implementation ownership, agent task design, integration, and runtime validation. No human team size or Senior Engineer title is claimed.
+
+The saved source passes the native compiler. A temporary non-layout shipout assertion also passed, confirming that the source stays within one page; the assertion was then removed, and the final original-format source was compiled successfully again. The user requested LaTeX to compile personally, so no separate PDF was exported. The site PDF remains the prior approved version.
+
+All eyebrow labels were removed. The final hero uses the user's name, specific current roles, and the authentic Umbratic interface directly. The generated backdrop, tilted framing, blue slogan, and second pill button were removed. The first-screen results end at 662 pixels on a 1280 by 720 desktop and 823 pixels on a 390 by 844 phone. Browser checks at 320, 390, 768, 1024, and 1280 pixels show no horizontal overflow or clipped name text. The screenshot viewer opens, Escape closes it, and focus returns to the initiating control. No browser warnings or errors were observed during review.
+
+The final build and 35-reference check pass. The existing two server tests passed during this revision. Earlier Lighthouse measurements above precede the final hero change and were not repeated. These changes remain local.

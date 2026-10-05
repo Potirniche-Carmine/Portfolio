@@ -79,19 +79,19 @@
     {Umbratic}{Reno, NV}
     {Founder \& Lead Engineer $|$ Private AI platform}{Mar. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Build a private AI workspace in Electron/React, with a Rust agent runtime and Go gateway for local llama.cpp and company-managed vLLM.}
-      \resumeItem{Implement workspace tools, context compression, code review, and SSH task execution; enforce tool permissions and keep model access behind the authenticated gateway.}
-      \resumeItem{Built document ingestion and Qdrant retrieval with team access filters, plus an admin console for model processes, user enrollment, and device revocation.}
-      \resumeItem{Built tools to create and edit documents, spreadsheets, presentations, and PDFs; added automated file checks and tests that verify spreadsheet content after edits.}
+      \resumeItem{Architected and built a private AI platform from the ground up: Electron/React desktop, Rust runtime, and authenticated Go gateway for local llama.cpp and company-managed vLLM.}
+      \resumeItem{Designed dependency-aware parallel tool execution, context compaction, bounded retries, cancellation, and resumable state; enforced permissions across workspace and remote tasks.}
+      \resumeItem{Define architecture, interfaces, and acceptance criteria; direct specialized coding agents through scoped parallel tasks, patch review, integration, and automated test-and-fix loops.}
+      \resumeItem{Built Qdrant retrieval with team access filters, model/device administration, and document, spreadsheet, presentation, and PDF tools with automated content checks.}
       \resumeItem{Reduced search latency from 15 seconds to \textbf{16 ms}, cold starts by \textbf{96\%}, and idle memory by \textbf{88\%} during the native rewrite.}
     \resumeItemListEnd
   \resumeSubheading
     {Crytica Security}{Reno, NV}
     {Software Engineer $|$ Cybersecurity startup}{Nov. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Lead a multi-tenant admin console in JavaScript and PHP over a C backend, with centralized authorization and parameterized SQL. Drive requirements through release with leadership, operations, and engineering.}
-      \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}; used parallel subprocess isolation to contain failures and cut synchronization time \textbf{85\%}.}
-      \resumeItem{Built a C deployment CLI that cut deployment from over an hour to \textbf{under 5 minutes}, with timeouts, retries, validation, and \textbf{100+ tests}.}
+      \resumeItem{Own a multi-tenant administration/configuration console in JavaScript/PHP over a C backend, from requirements through release; designed centralized authorization and parameterized SQL with coding-agent support.}
+      \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}; isolated parallel subprocess failures and cut synchronization time \textbf{85\%}.}
+      \resumeItem{Built an end-to-end installer and C deployment CLI with coding agents, owning integration and validation; cut deployment to \textbf{under 5 minutes} with retries, timeouts, and \textbf{100+ tests}.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -100,14 +100,14 @@
   \resumeProjectHeading
     {\textbf{UpDrafted} $|$ \emph{Creator \& Lead Engineer, Recruiting Platform}}{May 2025 -- May 2026}
     \resumeItemListStart
-      \resumeItem{Built two Next.js/TypeScript apps for athlete recruiting and administration, with sport and position filters, connections, transfer verification, and moderation workflows.}
-      \resumeItem{Designed shared PostgreSQL/Drizzle data models with \textbf{14 row-level security policies} and transaction-scoped user context; encrypted stored messages with AES-256-GCM.}
-      \resumeItem{Integrated Stripe subscriptions, signed webhooks, and plan-based usage limits; built Cloudflare R2 file storage and Docker deployment pipelines with GitHub Actions.}
+      \resumeItem{Designed and built Next.js/TypeScript recruiting and administration apps, owning architecture and agent-assisted implementation across athlete discovery, verification, messaging, and moderation.}
+      \resumeItem{Designed PostgreSQL/Drizzle models with \textbf{14 row-level security policies} and transaction-scoped user context; encrypted stored messages with AES-256-GCM.}
+      \resumeItem{Integrated Stripe subscriptions, signed webhooks, and plan-based usage limits; built Cloudflare R2 storage and Docker deployment pipelines with GitHub Actions.}
     \resumeItemListEnd
   \resumeProjectHeading
     {\textbf{Infernal} $|$ \emph{Independent Developer, Multiplayer Game}}{In development}
     \resumeItemListStart
-      \resumeItem{Build a Unity/C\# game with FishNet networking, server-controlled combat and team visibility, PlayFab matchmaking, and dedicated server lifecycle management.}
+      \resumeItem{Design Unity/C\#/FishNet multiplayer systems with server-controlled combat and visibility, PlayFab matchmaking, and dedicated server lifecycle; authored agent skills for netcode and native gameplay validation.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -122,9 +122,9 @@
 \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
   \normalsize\item{
     \textbf{Languages:} Rust, Go, C, C\#, TypeScript/JavaScript, Python, SQL, PHP \\
-    \textbf{AI Systems:} Agent runtimes, retrieval/RAG, vLLM, llama.cpp, Qdrant, PyTorch, LoRA \\
-    \textbf{Systems:} Electron, React, Next.js, PostgreSQL, Linux, Docker, Git, REST/SSE, Unity, CI/CD \\
-    \textbf{Areas:} Distributed systems, concurrency, access control, performance optimization, automated testing
+    \textbf{Systems Design:} Distributed systems, concurrency, API design, access control, performance tuning \\
+    \textbf{Agent Engineering:} Orchestration, tool loops, context management, skill design, RAG, automated testing \\
+    \textbf{Platforms:} Electron, React, Next.js, PostgreSQL, Linux, Docker, Unity, CI/CD, vLLM, llama.cpp
   }
 \end{itemize}
 

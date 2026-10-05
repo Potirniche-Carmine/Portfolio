@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { once } from 'node:events';
 import { readFile } from 'node:fs/promises';
+import { networkInterfaces } from 'node:os';
 
 async function start(t, args) {
   const env = { ...process.env, PORT: '0' };
@@ -34,8 +35,13 @@ test('production is reachable by the proxy and serves only built public files', 
   const manifest = JSON.parse(await readFile('package.json', 'utf8'));
   const address = await start(t, manifest.scripts.start.split(' ').slice(1));
   assert.equal(address.hostname, '0.0.0.0');
-  // A server bound only to 127.0.0.1 cannot accept this request.
-  address.hostname = '127.0.0.2';
+  // macOS only routes loopback aliases that were explicitly configured.
+  // Use its network address to retain the check for a localhost-only binding.
+  const proxyHost = process.platform === 'darwin'
+    ? Object.values(networkInterfaces()).flat().find(entry => entry.family === 'IPv4' && !entry.internal)?.address
+    : '127.0.0.2';
+  assert.ok(proxyHost, 'A network interface is required to verify proxy access');
+  address.hostname = proxyHost;
   const page = await fetch(address, { signal: AbortSignal.timeout(5000) });
   assert.equal(page.status, 200);
   assert.match(await page.text(), /Carmine/);

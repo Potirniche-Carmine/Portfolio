@@ -10,5 +10,11 @@
     "check": "node tools/check.mjs",
     "test": "npm run build && node --test tools/serve.test.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "geist": "1.7.2",
+    "gsap": "3.15.0"
+  }
 }
