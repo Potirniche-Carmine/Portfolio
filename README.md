@@ -24,7 +24,7 @@ Project buttons support arrow keys, Home, and End. Engineering details expand on
 
 ## Resume
 
-`resume/content.json` holds the text; `resume/template.tex` holds the layout and contacts. `resume/Carmine-Potirniche-Resume.tex` is the existing document edited in Codex's native LaTeX editor. The latest user-supplied template is preserved exactly: preamble, fonts, macros, margins, spacing, contact links, section order, and bullet count. Only the wording has changed. Its header contains only the name and contact details. The new source is for the user to compile; the public PDF still contains the prior approved export and has not been replaced in this wording revision.
+`resume/content.json` holds the text; `resume/template.tex` holds the layout and contacts. `resume/Carmine-Potirniche-Resume.tex` is the existing document edited in Codex's native LaTeX editor. The user-supplied layout retains its fonts, margins, spacing, contact header, and section order. Crytica is the sole Experience entry; Umbratic, UpDrafted, and GamePack are Projects. Infernal remains on the portfolio. The October 12 revision adds confirmed RHEL 9 deployment, testing, leadership coordination, and AI-agent orchestration experience. The public resume download has been refreshed from the current source for resumed applications.
 
 Validate source edits with the built-in compiler. When a PDF export is authorized, `python tools/render-resume.py --engine PATH` rebuilds the source, verifies one Letter page, extractable text, and no overflow, and updates the portfolio download plus `output/pdf/`. It needs `pypdf` and Tectonic or pdfLaTeX. Render the preview with:
 

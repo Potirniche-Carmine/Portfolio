@@ -7,47 +7,46 @@
   "github": "https://github.com/Potirniche-Carmine",
   "experience": [
     {
-      "name": "Umbratic",
-      "role": "Founder & Lead Engineer | Private AI platform",
-      "dates": "Mar. 2025 - Present",
-      "location": "Reno, NV",
-      "bullets": [
-        "Architected and built a private AI platform from the ground up: Electron/React desktop, Rust runtime, and authenticated Go gateway for local llama.cpp and company-managed vLLM.",
-        "Designed dependency-aware parallel tool execution, context compaction, bounded retries, cancellation, and resumable state; enforced permissions across workspace and remote tasks.",
-        "Define architecture, interfaces, and acceptance criteria; direct specialized coding agents through scoped parallel tasks, patch review, integration, and automated test-and-fix loops.",
-        "Built Qdrant retrieval with team access filters, model/device administration, and document, spreadsheet, presentation, and PDF tools with automated content checks.",
-        "Reduced search latency from 15 seconds to <b>16 ms</b>, cold starts by <b>96%</b>, and idle memory by <b>88%</b> during the native rewrite."
-      ]
-    },
-    {
       "name": "Crytica Security",
       "role": "Software Engineer | Cybersecurity startup",
       "dates": "Nov. 2025 - Present",
       "location": "Reno, NV",
       "bullets": [
-        "Own a multi-tenant administration/configuration console in JavaScript/PHP over a C backend, from requirements through release; designed centralized authorization and parameterized SQL with coding-agent support.",
-        "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>; isolated parallel subprocess failures and cut synchronization time <b>85%</b>.",
-        "Built an end-to-end installer and C deployment CLI with coding agents, owning integration and validation; cut deployment to <b>under 5 minutes</b> with retries, timeouts, and <b>100+ tests</b>."
+        "Architected and developed Crytica's multi-tenant administration console in JavaScript/PHP with a C backend, centralized authorization, and parameterized SQL; owned requirements, delivery milestones, and release readiness for the console and installer in collaboration with leadership.",
+        "Built a RHEL 9 bootstrap script and installer wizard for deploying the full product across <b>3--12 servers</b>; added retries and timeouts and reduced deployment time to <b>under 5 minutes</b>.",
+        "Orchestrated <b>hundreds of AI agents and subagents</b>, reviewing and integrating their work; validated the product with <b>100+ automated tests</b> and black-box end-to-end testing of user input flows.",
+        "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>, isolating subprocess failures and reducing synchronization time by <b>85%</b>."
       ]
     }
   ],
   "projects": [
     {
-      "name": "UpDrafted",
-      "role": "Creator & Lead Engineer, Recruiting Platform",
-      "dates": "May 2025 - May 2026",
+      "name": "Umbratic",
+      "role": "Private AI Platform",
+      "dates": "Mar. 2025 - Present",
       "bullets": [
-        "Designed and built Next.js/TypeScript recruiting and administration apps, owning architecture and agent-assisted implementation across athlete discovery, verification, messaging, and moderation.",
-        "Designed PostgreSQL/Drizzle models with <b>14 row-level security policies</b> and transaction-scoped user context; encrypted stored messages with AES-256-GCM.",
-        "Integrated Stripe subscriptions, signed webhooks, and plan-based usage limits; built Cloudflare R2 storage and Docker deployment pipelines with GitHub Actions."
+        "Built a private AI platform with an Electron/React desktop app, Rust runtime, and Go gateway supporting local and company-managed models.",
+        "Implemented parallel tool execution, context management, resumable conversations, and permission controls for local and remote tasks.",
+        "Added Qdrant document retrieval with team access controls and tools for working with documents, spreadsheets, presentations, and PDFs.",
+        "Reduced search latency from 15 seconds to <b>16 ms</b>, cold starts by <b>96%</b>, and idle memory by <b>88%</b> during the native rewrite."
       ]
     },
     {
-      "name": "Infernal",
-      "role": "Independent Developer, Multiplayer Game",
+      "name": "UpDrafted",
+      "role": "Athlete Recruiting Platform",
+      "dates": "May 2025 - May 2026",
+      "bullets": [
+        "Designed and built Next.js/TypeScript recruiting and administration apps for athlete discovery, verification, messaging, and moderation.",
+        "Designed PostgreSQL/Drizzle models with <b>14 row-level security policies</b> and transaction-scoped user context; encrypted stored messages with AES-256-GCM.",
+        "Integrated Stripe subscriptions, signed webhooks, Cloudflare R2 storage, and Docker deployment pipelines with GitHub Actions."
+      ]
+    },
+    {
+      "name": "GamePack",
+      "role": "Video Review App",
       "dates": "In development",
       "bullets": [
-        "Design Unity/C#/FishNet multiplayer systems with server-controlled combat and visibility, PlayFab matchmaking, and dedicated server lifecycle; authored agent skills for netcode and native gameplay validation."
+        "Build an offline video review app with React Native/TypeScript, native macOS and Windows playback, and Rust/SQLite storage; synchronize frame annotations, threaded comments, and timeline markers."
       ]
     }
   ],
@@ -60,19 +59,19 @@
   "skills": [
     [
       "Languages",
-      "Rust, Go, C, C#, TypeScript/JavaScript, Python, SQL, PHP"
+      "TypeScript/JavaScript, Rust, Go, C, C#, Python, SQL, PHP"
     ],
     [
-      "Systems Design",
-      "Distributed systems, concurrency, API design, access control, performance tuning"
+      "Full Stack & Systems",
+      "React, Next.js, Electron, PostgreSQL, API design, access control, concurrency"
     ],
     [
-      "Agent Engineering",
-      "Orchestration, tool loops, context management, skill design, RAG, automated testing"
+      "AI & Agents",
+      "LLM integration, tool calling, RAG, context management, AI-assisted development"
     ],
     [
-      "Platforms",
-      "Electron, React, Next.js, PostgreSQL, Linux, Docker, Unity, CI/CD, vLLM, llama.cpp"
+      "Tools & Platforms",
+      "Linux, Docker, GitHub Actions, Unity, Qdrant, vLLM, llama.cpp"
     ]
   ]
 }
