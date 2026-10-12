@@ -16,7 +16,7 @@ Open http://127.0.0.1:4173. Node 20 or later is sufficient; the browser assets a
 
 ## Content and design
 
-The first screen uses Carmine's name, current roles, an unaltered Umbratic workspace capture, and three historical measured outcomes. It avoids positioning slogans and decorative image framing. Architecture, implementation, integration, and runtime validation lead the project copy. Agent engineering appears as a concrete development practice: specialized tasks, custom skills, patch review, and automated feedback loops. A compact project explorer covers Umbratic, UpDrafted, and Infernal. Crytica's console and installer work, the engineering workflow, education, and contact follow. There are no eyebrow labels above headings or project names.
+The first screen uses Carmine's name, current roles, an unaltered Umbratic workspace capture, and three historical measured outcomes. It avoids positioning slogans and decorative image framing. Architecture, implementation, integration, and runtime validation lead the project copy. Agent engineering appears as a concrete development practice: specialized tasks, custom skills, patch review, and automated feedback loops. A compact project explorer covers Umbratic, GamePack, UpDrafted, and Infernal. The four-column desktop explorer stacks below 1200px to keep project descriptions readable. Crytica's console and installer work, the engineering workflow, education, and contact follow. There are no eyebrow labels above headings or project names.
 
 The personal typographic hero, Geist type, restrained controls, and project accordion draw on the requested apple-design, gpt-taste, and design-taste-frontend skills. The initial design seed was 126. Short image entry, scroll-linked text emphasis, and a brief desktop heading pin use GSAP and ScrollTrigger. No long pinned scene or marquee delays the recruiter scan. Light/dark system preferences, reduced motion, reduced transparency, increased contrast, keyboard focus, and mobile layouts are supported.
 
@@ -37,6 +37,7 @@ Dates, degree details, and historical performance figures came from the supplied
 ## Assets
 
 - Umbratic screenshots show the real desktop renderer in dark mode, captured September 21, 2026, with local sample content. Sample conversation test results are demonstration content.
+- GamePack's screenshot is the unaltered native macOS capture from its public README (`docs/assets/review.png`, added October 12, 2026). It shows sample Earth footage, frame drawings, demo comments and replies, and the review timeline. The project is in active development. Its portfolio description is grounded in the current review guide, development guide, native hosts, and Rust storage implementation.
 - UpDrafted screenshots show real components and styles in an isolated harness with fictional recruiting accounts. API, authentication, and subscription responses are fixtures; no live messages or database writes were used.
 - Infernal screenshots are native captures from `Infernal-Windows-v0.1.0-2026-09-21`, showing Maelstrom in the shooting range.
 - `hero-metal.jpg` and its mobile variant were generated for the earlier hero revision. They are no longer referenced by the page; the current hero shows the authentic product capture directly.
