@@ -53,3 +53,36 @@ button{border:0} ::selection{background:var(--accent);color:var(--button-ink)}
 
 /* Preserve the complete review workspace when GamePack is open. */
 .project.is-active .gamepack-cover,html:not(.enhanced) .gamepack-cover{height:auto;aspect-ratio:2788/1664;object-fit:contain;background:#08090b}
+
+/* Selected work, framed by a quiet glass material. */
+:root { color-scheme:dark; --paper:#101714; --surface:#1b2520; --ink:#eff4ef; --muted:#abb9af; --line:#35483d; --accent:#c2dec9; }
+body { background:radial-gradient(ellipse at 75% 5%,#304c3b88,transparent 45%),radial-gradient(ellipse at 0 48%,#213d2c77,transparent 35%),var(--paper); }
+html { scroll-padding-top:110px; }
+.site-header { position:sticky;top:16px;z-index:10;margin-top:16px;padding:12px 22px;border:1px solid #b2d0ba26;border-radius:18px;background:#1a2820bd;backdrop-filter:blur(26px) saturate(150%);-webkit-backdrop-filter:blur(26px) saturate(150%);box-shadow:inset 0 1px 0 #d6f1df24,0 12px 40px #04130b30; }
+.hero { grid-template-columns:1fr; padding:90px 0 40px;gap:54px; }
+.hero-copy { display:grid;grid-template-columns:1.35fr 1fr;gap:14px 80px;align-items:end; }
+.hero h1 { grid-row:span 2;font-size:clamp(4rem,9vw,8.5rem);font-weight:450;margin:0;letter-spacing:-.075em; }
+.hero-description { font-size:1.08rem;max-width:35ch; }
+.hero-actions { margin-top:10px; }
+.hero-actions .button { border-radius:12px;background:#dbe8df;color:#1b3023; }
+.hero-visual { padding:12px;border:1px solid #cfeddc30;border-radius:25px;background:#b3d0bb0c;box-shadow:inset 0 1px 0 #e7fff124,0 35px 90px #000b052f; }
+.hero-screen { border-radius:15px;border-color:#c5dfcc20; }
+.hero-visual figcaption { padding:0 12px; }
+.hero-visual figcaption>img { filter:invert(1); }
+.work { padding-top:80px; }
+.section-heading { display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:32px; }
+.section-heading h2 { font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.055em; }
+.section-heading>p { font-size:.94rem;max-width:30ch; }
+.project-explorer { display:grid;grid-template-columns:1fr;gap:40px;background:none;border:0;overflow:visible; }
+.project,.project.is-active { display:grid;grid-template-columns:1.2fr 1fr;gap:0 40px;background:#e8fff508;border:1px solid #d2eadb20;border-radius:24px;padding:32px;overflow:hidden; }
+.project-heading { grid-column:1/-1;margin:0 0 24px;font-size:2.2rem;font-weight:500;letter-spacing:-.05em; }
+.project-cover,.project.is-active .gamepack-cover { height:auto;aspect-ratio:16/10;object-fit:contain;align-self:start;border-radius:12px;background:#101512;border:1px solid #c8e6d321; }
+.project-body { padding:0; }
+.project-role { font-size:.78rem; }.project-lead{font-size:1.6rem;line-height:1.2;max-width:24ch}.project-facts{gap:18px}.project-facts>div{grid-template-columns:100px 1fr;font-size:.85rem}.engineering-details{font-size:.83rem}.project-links{font-size:.82rem}
+.crytica { margin-block:64px 40px;padding:38px;border:1px solid #cbe8d722;border-radius:24px;background:#ebfff60a;gap:50px; }.crytica p:not(.project-role):not(.crytica-lead){font-size:.95rem}.crytica .crytica-detail{font-size:.87rem!important}
+.contact { padding-block:60px 36px; }.contact h2{font-size:clamp(2.2rem,4vw,3.5rem)}.footer-note{font-size:.75rem}
+.lightbox { background:#15221b;color:#eff4ef; }
+@media(max-width:900px) { .wrap{width:calc(100% - 40px)}.hero{padding-top:60px}.hero-copy{grid-template-columns:1fr;gap:26px}.hero h1{grid-row:auto;font-size:clamp(4rem,12vw,7rem)}.hero-description{max-width:48ch}.hero-actions{margin-top:0}.section-heading{display:block}.section-heading>p{max-width:none}.project,.project.is-active{grid-template-columns:1fr;padding:22px;gap:0}.project-cover{margin-bottom:26px}.project-body{padding:0}.crytica{padding:26px}.site-header{padding-inline:16px}.identity span{display:none} }
+@media(max-width:600px) { .hero{gap:32px;padding-top:48px}.hero h1{font-size:clamp(3.5rem,12.5vw,5rem)}.hero-description{font-size:.95rem}.hero-visual{padding:6px;border-radius:18px}.hero-visual figcaption{padding:0 6px}.site-header nav{gap:14px;font-size:.7rem}.identity{font-size:.8rem}.work{padding-top:50px}.project-heading{font-size:1.8rem}.project-lead{font-size:1.4rem}.project-facts>div{grid-template-columns:1fr;gap:4px}.contact-email{font-size:.8rem;gap:10px}.crytica{margin-block:40px}.section-heading h2{font-size:2rem} }
+@media(prefers-reduced-transparency:reduce) { .site-header{background:#1a2820;backdrop-filter:none;-webkit-backdrop-filter:none}.project,.crytica{background:#1b2520} }
+@media(prefers-contrast:more) { :root{--muted:#d5e3d9;--line:#81988a}.site-header,.project,.crytica{border-color:#81988a;background:#14221a} }

@@ -4,23 +4,17 @@ A single-page portfolio in HTML, CSS, and vanilla JavaScript. Geist typography a
 
 ## Run and deploy
 
-```sh
-npm run dev
-npm run check
-npm test
-```
+Run `npm run dev` to preview on localhost:4173. Verify with `npm run check`, `npm test`, and browser checks at desktop and phone widths. `npm run build` stages only public files into `dist/`.
 
-Open http://127.0.0.1:4173. Node 20 or later is sufficient; the browser assets are committed, so package installation is not needed to preview or build.
-
-`npm run build` copies the public site to `dist/`. For the existing Coolify Nixpacks application, use `npm run build`, `npm start`, and internal port `3000`. Keep **Is it a static site?** disabled. Production serves only `dist/` and listens on `0.0.0.0:3000`. `PORT` and `HOST` can override these values. Development defaults to `127.0.0.1:4173`.
+The production target is Cloudflare Pages project `carmine-portfolio`, with `carminepotirniche.com` and `www.carminepotirniche.com` as custom domains. The GitHub integration builds and deploys `main` automatically. Deploy `dist/` with Wrangler for a manual release. The www address redirects to the apex through `_redirects`. The site needs no Node server or VPS in production. The local Node server remains for preview and verification.
 
 ## Content and design
 
-The first screen uses Carmine's name, current roles, an unaltered Umbratic workspace capture, and three historical measured outcomes. It avoids positioning slogans and decorative image framing. Architecture, implementation, integration, and runtime validation lead the project copy. Agent engineering appears as a concrete development practice: specialized tasks, custom skills, patch review, and automated feedback loops. A compact project explorer covers Umbratic, GamePack, UpDrafted, and Infernal. The four-column desktop explorer stacks below 1200px to keep project descriptions readable. Crytica's console and installer work, the engineering workflow, education, and contact follow. There are no eyebrow labels above headings or project names.
+Two substantial personal projects lead the portfolio, Umbratic and GamePack, followed by Crytica Security experience. Each project has visible imagery, a concise architecture explanation, optional engineering details, and links to source or the project website. The full résumé remains available separately.
 
-The personal typographic hero, Geist type, restrained controls, and project accordion draw on the requested apple-design, gpt-taste, and design-taste-frontend skills. The initial design seed was 126. Short image entry, scroll-linked text emphasis, and a brief desktop heading pin use GSAP and ScrollTrigger. No long pinned scene or marquee delays the recruiter scan. Light/dark system preferences, reduced motion, reduced transparency, increased contrast, keyboard focus, and mobile layouts are supported.
+The design uses self-hosted Geist, large personal typography, a muted green glass navigation surface, soft refracted edges, and real product captures. Native scrolling, focus states, reduced motion, reduced transparency, and increased contrast are supported. No runtime third-party requests, analytics, or animation dependencies are required.
 
-Project buttons support arrow keys, Home, and End. Engineering details expand on demand. Screenshots open in a viewer with Previous/Next, Left/Right keys, Escape, a Close button, an original-image link, and return of focus. Without JavaScript, all project text remains visible and image links open the original files. Screenshots depict sample content, identified in the viewer captions.
+Screenshots open in a keyboard-accessible viewer with arrow navigation, Escape, and focus return. Without JavaScript they open as ordinary image links. Umbratic captures were refreshed from the actual development renderer on November 8, 2026 with clearly identified sample content. GamePack retains its authentic native app capture.
 
 ## Resume
 
@@ -36,7 +30,7 @@ Dates, degree details, and historical performance figures came from the supplied
 
 ## Assets
 
-- Umbratic screenshots show the real desktop renderer in dark mode, captured September 21, 2026, with local sample content. Sample conversation test results are demonstration content.
+- The active Umbratic screenshots are current November 8, 2026 renderer captures with sample content. Earlier captures remain unreferenced historical assets.
 - GamePack's screenshot is the unaltered native macOS capture from its public README (`docs/assets/review.png`, added October 12, 2026). It shows sample Earth footage, frame drawings, demo comments and replies, and the review timeline. The project is in active development. Its portfolio description is grounded in the current review guide, development guide, native hosts, and Rust storage implementation.
 - UpDrafted screenshots show real components and styles in an isolated harness with fictional recruiting accounts. API, authentication, and subscription responses are fixtures; no live messages or database writes were used.
 - Infernal screenshots are native captures from `Infernal-Windows-v0.1.0-2026-09-21`, showing Maelstrom in the shooting range.

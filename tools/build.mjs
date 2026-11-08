@@ -1,5 +1,5 @@
 import { mkdir, copyFile, cp, unlink } from 'node:fs/promises';
-const pages = ['index.html','404.html','robots.txt','sitemap.xml'];
+const pages = ['index.html','404.html','robots.txt','sitemap.xml','_headers','_redirects'];
 await mkdir('dist',{recursive:true});
 // Remove pages from the earlier build when updating an existing output folder.
 for (const page of ['umbratic.html','updrafted.html','infernal.html','resume.html']) {

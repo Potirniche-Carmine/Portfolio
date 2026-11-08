@@ -37,7 +37,7 @@ const data = JSON.parse(await readFile('resume/content.json','utf8'));
 const resumeTex = await readFile('resume/Carmine-Potirniche-Resume.tex','utf8');
 assert.ok(resumeTex.includes('\\begin{document}') && resumeTex.includes('\\end{document}'), 'LaTeX download must contain a complete document');
 for (const row of [...data.experience,...data.projects]) {
-  if (!pages.get('index.html').includes(row.name)) failures.push(`index.html: missing ${row.name}`);
+  // The portfolio is curated independently of the full résumé.
   if (!resumeTex.includes(row.name)) failures.push(`Resume source: missing ${row.name}`);
 }
 if (failures.length) {

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Carmine Potirniche, software engineer at Crytica Security and creator of Umbratic. Full-stack development, private AI systems, and AI-agent orchestration with hands-on engineering ownership.">
+<meta name="description" content="Carmine Potirniche, software engineer at Crytica Security and creator of Umbratic. Creator of Umbratic and GamePack. Desktop interfaces, native runtimes, and security systems.">
 <meta name="theme-color" content="#111214">
 <title>Carmine Potirniche - Software Engineer</title>
 <link rel="canonical" href="https://carminepotirniche.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Carmine Potirniche - Software Engineer">
-<meta property="og:description" content="Software engineer at Crytica Security and creator of Umbratic, a private AI platform. Architecture, full-stack development, and AI-agent orchestration from requirements through validation.">
+<meta property="og:description" content="Software engineer at Crytica Security. Creator of Umbratic, the AI workspace I use, and GamePack, a native video review tool.">
 <meta property="og:url" content="https://carminepotirniche.com/">
 <meta property="og:image" content="https://carminepotirniche.com/assets/images/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -17,50 +17,44 @@
 <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml" sizes="any">
 <link rel="preload" href="assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
-<script src="assets/vendor/gsap.min.js" defer></script>
-<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
   <a class="identity" href="#main">Carmine Potirniche<span>Software Engineer</span></a>
-  <nav aria-label="Portfolio sections"><a href="#work">Selected work</a><a href="#agent-engineering">How I build</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
+  <nav aria-label="Portfolio sections"><a href="#work">Selected work</a><a href="#crytica">Experience</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
 </header>
 <main id="main">
   <section class="hero wrap" aria-labelledby="intro-title">
     <div class="hero-copy">
       <h1 id="intro-title">Carmine<br>Potirniche.</h1>
-      <p class="hero-description">Software engineer at Crytica Security and creator of Umbratic, a private AI platform. I build across the stack, from architecture to implementation and validation.</p>
+      <p class="hero-description">I make software I want to use. AI workspaces, native video tools, and the systems underneath them. Software engineer at Crytica Security.</p>
       <div class="hero-actions"><a class="button primary" href="#work">See my work <span aria-hidden="true">↘</span></a><a class="resume-link" href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a></div>
     </div>
     <figure class="hero-visual">
-      <a class="image-button hero-screen" href="assets/images/umbratic-workspace-dark.jpg" data-lightbox aria-label="Enlarge Umbratic workspace screenshot">
-        <img src="assets/images/umbratic-workspace-dark.jpg" alt="Umbratic's private AI workspace showing a request, tool activity, results, and files ready for review" width="1920" height="1080" fetchpriority="high"><span class="expand-image" aria-hidden="true">↗</span>
+      <a class="image-button hero-screen" href="assets/images/umbratic-workspace.jpg" data-lightbox aria-label="Enlarge Umbratic workspace screenshot">
+        <img src="assets/images/umbratic-workspace.jpg" alt="Umbratic's private AI workspace showing a request, tool activity, results, and files ready for review" width="1920" height="1080" fetchpriority="high"><span class="expand-image" aria-hidden="true">↗</span>
       </a>
       <figcaption><img src="assets/images/umbratic-mark.svg" alt="" width="22" height="22"><span>Umbratic<span>Desktop application · Rust runtime · Go gateway</span></span><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer" aria-label="Visit Umbratic">↗</a></figcaption>
     </figure>
   </section>
-  <div class="proof wrap" aria-label="Selected engineering results">
-    <dl><div><dt>16<span>ms</span></dt><dd>Workspace search <span>Umbratic, down from 15 seconds</span></dd></div><div><dt>85<span>%</span></dt><dd>Less synchronization time <span>Crytica, across 9+ ledgers</span></dd></div><div><dt>&lt;5<span>min</span></dt><dd>Deployment time <span>Crytica, down from over an hour</span></dd></div></dl>
-    <p>Results from measured internal workflows.</p>
-  </div>
   <section class="work wrap" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><h2 id="work-title">Built from the ground up.</h2><p>Architecture, implementation, and responsibility for how it runs.</p></div>
+    <div class="section-heading"><h2 id="work-title">Two projects. Every layer.</h2><p>From the interface you touch to the runtime that makes it work.</p></div>
     <div class="project-explorer" aria-label="Selected projects">
       <article class="project is-active" id="umbratic" aria-labelledby="umbratic-title">
-        <button class="project-toggle" type="button" disabled aria-expanded="true" aria-controls="umbratic-body" data-project="umbratic"><span class="project-name" id="umbratic-title">Umbratic</span><span class="toggle-icon" aria-hidden="true">+</span></button>
-        <img class="project-cover" src="assets/images/umbratic-code-dark.jpg" alt="Umbratic's code review panel with a Go timeout change and added and removed lines" width="1920" height="1080" loading="lazy">
+        <h3 class="project-heading" id="umbratic-title">Umbratic</h3>
+        <img class="project-cover" src="assets/images/umbratic-review.jpg" alt="Umbratic’s current code review with compact feedback, layout, and editor controls" width="1920" height="1080" loading="lazy">
         <div class="project-body" id="umbratic-body">
           <p class="project-role">Creator &amp; Engineer <span>Project · 2025 - present</span></p>
-          <p class="project-lead">A complete private AI platform, from the desktop interface to the execution runtime and infrastructure.</p>
-          <dl class="project-facts"><div><dt>Architecture</dt><dd>Electron/React desktop, Rust runtime, authenticated Go gateway, and local or company-managed model serving.</dd></div><div><dt>Runtime design</dt><dd>Dependency-aware parallel tools, context compaction, resumable state, bounded retries, and permission boundaries.</dd></div><div><dt>Engineering</dt><dd>I define interfaces and acceptance criteria, direct scoped agents, review patches, and validate the integrated system.</dd></div></dl>
-          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>On-demand skills and Qdrant retrieval with team access filters. Isolated Git worktrees, review diffs, checkpoints, repeated-call guards, cancellation, and redacted telemetry. Artifact tools create and validate documents, spreadsheets, presentations, and PDFs.</p><p>The native rewrite reduced cold-start time by 96% and idle memory by 88% in the measured workflows.</p></details>
-          <div class="project-links"><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer">Explore Umbratic <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/umbratic-code-dark.jpg" data-lightbox data-image="assets/images/umbratic-code-dark.jpg" data-alt="Umbratic code review showing a Go request timeout change and two changed files" data-caption="Reviewable changes in Umbratic. Sample workspace.">View screenshot <span aria-hidden="true">↗</span></a></div>
+          <p class="project-lead">The AI workspace I build in, every day.</p>
+          <dl class="project-facts"><div><dt>Architecture</dt><dd>Electron and React desktop, Rust execution runtime, and a Go gateway. Local models, your own server, ChatGPT, or Claude.</dd></div><div><dt>Runtime design</dt><dd>Dependency-aware parallel tools, context compaction, resumable state, bounded retries, and permission boundaries.</dd></div><div><dt>Engineering</dt><dd>I define interfaces and acceptance criteria, direct scoped agents, review patches, and validate the integrated system.</dd></div></dl>
+          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>Image references, project chats, live steering, queued prompts, and a compact review panel. File-level feedback and editor shortcuts keep the next step close. The runtime handles permissions, cancellation, context, and artifact tools.</p><p>Open source under the MIT License. I use it as a working environment and keep improving the details as I go.</p></details>
+          <div class="project-links"><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer">Explore Umbratic <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/umbratic-review.jpg" data-lightbox data-image="assets/images/umbratic-review.jpg" data-alt="Umbratic code review with sample workspace changes" data-caption="Reviewable changes in Umbratic. Sample workspace.">View screenshot <span aria-hidden="true">↗</span></a></div>
         </div>
       </article>
       <article class="project" id="gamepack" aria-labelledby="gamepack-title">
-        <button class="project-toggle" type="button" disabled aria-expanded="true" aria-controls="gamepack-body" data-project="gamepack"><span class="project-name" id="gamepack-title">GamePack</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+        <h3 class="project-heading" id="gamepack-title">GamePack</h3>
         <img class="project-cover gamepack-cover" src="assets/images/gamepack-review.png" alt="GamePack's native video review workspace with blue frame annotations, a comment and reply, and numbered timeline markers" width="2788" height="1664" loading="lazy">
         <div class="project-body" id="gamepack-body">
           <p class="project-role">Creator &amp; Lead Engineer <span>In development</span></p>
@@ -70,44 +64,18 @@
           <div class="project-links"><a href="https://github.com/Potirniche-Carmine/GamePack" target="_blank" rel="noopener noreferrer">Explore GamePack <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/gamepack-review.png" data-lightbox data-image="assets/images/gamepack-review.png" data-alt="GamePack showing frame annotations, a threaded conversation, and review timeline markers over sample Earth footage" data-caption="GamePack's native macOS app, with sample footage and demo comments. In development.">View screenshot <span aria-hidden="true">↗</span></a></div>
         </div>
       </article>
-      <article class="project" id="updrafted" aria-labelledby="updrafted-title">
-        <button class="project-toggle" type="button" disabled aria-expanded="true" aria-controls="updrafted-body" data-project="updrafted"><span class="project-name" id="updrafted-title">UpDrafted</span><span class="toggle-icon" aria-hidden="true">+</span></button>
-        <img class="project-cover" src="assets/images/updrafted-messages.jpg" alt="UpDrafted's recruiting app showing messages between fictional athletes and coaches" width="1920" height="1080" loading="lazy">
-        <div class="project-body" id="updrafted-body">
-          <p class="project-role">Creator &amp; Lead Engineer <span>2025 - 2026</span></p>
-          <p class="project-lead">Athlete discovery, conversations, subscriptions, and a complete administration app.</p>
-          <dl class="project-facts"><div><dt>Architecture</dt><dd>Separate Next.js/TypeScript recruiting and administration apps over shared PostgreSQL/Drizzle data models.</dd></div><div><dt>Access &amp; billing</dt><dd>14 row-level security policies, encrypted stored messages, signed Stripe webhooks, and plan-based limits.</dd></div><div><dt>Engineering</dt><dd>I own the data model, user flows, and deployment pipeline, using coding agents for implementation and review.</dd></div></dl>
-          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>Drizzle schemas and transaction-scoped user context. Cloudflare R2 file storage, plan-based usage limits, and separate athlete and administration apps. Changes reviewed against access rules, payment events, and complete user flows.</p></details>
-          <div class="project-links"><a class="text-button" href="assets/images/updrafted-messages.jpg" data-lightbox data-image="assets/images/updrafted-messages.jpg" data-alt="UpDrafted messages with fictional recruiting conversations" data-caption="The actual UpDrafted app, with fictional sample accounts.">View screenshot <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/updrafted-connections.jpg" data-lightbox data-image="assets/images/updrafted-connections.jpg" data-alt="UpDrafted connections showing college program needs, coaches, and recruiters" data-caption="Program needs and contacts in UpDrafted. Fictional sample data.">Connections <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </article>
-      <article class="project" id="infernal" aria-labelledby="infernal-title">
-        <button class="project-toggle" type="button" disabled aria-expanded="true" aria-controls="infernal-body" data-project="infernal"><span class="project-name" id="infernal-title">Infernal</span><span class="toggle-icon" aria-hidden="true">+</span></button>
-        <img class="project-cover" src="assets/images/infernal-maelstrom.jpg" alt="Maelstrom in Infernal's native shooting range, with character abilities and weapon interface" width="2560" height="1440" loading="lazy">
-        <div class="project-body" id="infernal-body">
-          <p class="project-role">Independent Developer <span>In development</span></p>
-          <p class="project-lead">Multiplayer combat, with networking and backend systems built together.</p>
-          <dl class="project-facts"><div><dt>Architecture</dt><dd>Unity/C# clients, FishNet networking, PlayFab matchmaking, and dedicated server allocation and lifecycle.</dd></div><div><dt>Runtime behavior</dt><dd>Server-controlled combat and team visibility, validated in the actual game build.</dd></div><div><dt>Engineering</dt><dd>Custom skills guide specialized agents. I coordinate file ownership, integrate patches, and inspect native gameplay.</dd></div></dl>
-          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>Dedicated server allocation and lifecycle management. Shared-editor coordination and one owner per file keep parallel development integrated. Runtime checks and actual game inspection close the feedback loop.</p></details>
-          <div class="project-links"><a class="text-button" href="assets/images/infernal-maelstrom.jpg" data-lightbox data-image="assets/images/infernal-maelstrom.jpg" data-alt="Maelstrom in Infernal's shooting range" data-caption="Infernal, captured from the native game build. In development.">View gameplay <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/infernal-range.jpg" data-lightbox data-image="assets/images/infernal-range.jpg" data-alt="Infernal gameplay in the native shooting range" data-caption="Infernal's shooting range in the native game build.">Shooting range <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </article>
     </div>
   </section>
   <article class="crytica wrap" id="crytica" aria-labelledby="crytica-title">
     <div><h2 id="crytica-title">Crytica Security</h2><p class="project-role">Software Engineer <span>Nov. 2025 - present</span></p></div>
     <div><p class="crytica-lead">Security software, from requirements to installation.</p><p>I architected and developed a multi-tenant administration console in JavaScript/PHP over a C backend, plus a RHEL 9 bootstrap script and installer wizard that deploy the full product across 3–12 servers. I own requirements, delivery milestones, and release readiness in collaboration with leadership.</p><p class="crytica-detail">Across the project, I orchestrated hundreds of AI agents and subagents, reviewed and integrated their work, and validated the product with 100+ automated tests and black-box end-to-end tests of user input flows. Centralized authorization and parameterized SQL protect console access; subprocess isolation improves synchronization across 9+ ledgers.</p></div>
   </article>
-  <section class="engineering wrap" id="agent-engineering" aria-labelledby="engineering-title">
-    <div class="engineering-heading"><h2 id="engineering-title">Set the architecture.<br>Own the outcome.</h2><p>I use AI agents throughout planning, implementation, and testing. I define the architecture and acceptance criteria, review the code, integrate changes, and validate the complete system.</p></div>
-    <div class="engineering-loop"><p class="loop-statement"><span data-reveal>Understand the system.</span> <span data-reveal>Define the interfaces.</span> <span data-reveal>Coordinate execution.</span> <span data-reveal>Verify the behavior.</span></p><ol class="workflow"><li><h3>Architecture &amp; task design</h3><p>Define component boundaries, data flow, failure cases, and acceptance criteria before delegating implementation.</p></li><li><h3>Agent orchestration &amp; integration</h3><p>Equip specialists with custom skills and relevant context. Assign file ownership, isolate parallel work, and review each patch against the design.</p></li><li><h3>Validation &amp; automation</h3><p>Build, test, and inspect actual behavior. Diagnose failures, direct focused fixes, and encode repeatable checks in skills and CI/CD.</p></li></ol></div>
-  </section>
-  <footer class="contact wrap" id="contact" aria-labelledby="contact-title"><div><h2 id="contact-title">Start a conversation.</h2><a class="contact-email" href="mailto:potirnichecarmine@gmail.com">potirnichecarmine@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a><a href="https://github.com/Potirniche-Carmine" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/carmineap" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><div class="footer-note"><p>Carmine Potirniche <span>Reno, Nevada</span></p><p>B.S. Computer Science &amp; Engineering, UNR <span>Statistics minor, 2025</span></p></div></footer>
+  <footer class="contact wrap" id="contact" aria-labelledby="contact-title"><div><h2 id="contact-title">Let’s build something useful.</h2><a class="contact-email" href="mailto:potirnichecarmine@gmail.com">potirnichecarmine@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a><a href="https://github.com/Potirniche-Carmine" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/carmineap" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><div class="footer-note"><p>Carmine Potirniche <span>Reno, Nevada</span></p><p>B.S. Computer Science &amp; Engineering, UNR <span>Statistics minor, 2025</span></p></div></footer>
 </main>
 <dialog class="lightbox" aria-label="Project image viewer">
   <div class="lightbox-toolbar"><span class="image-count"></span><button type="button" class="close-image">Close <span aria-hidden="true">×</span></button></div>
-  <div class="lightbox-image"><img src="assets/images/umbratic-workspace-dark.jpg" alt="" width="1920" height="1080"></div>
-  <div class="lightbox-footer"><p></p><div><a class="original-image" href="assets/images/umbratic-workspace-dark.jpg" target="_blank" rel="noopener noreferrer">Original image <span aria-hidden="true">↗</span></a><button class="previous-image" type="button" aria-label="Previous image">←</button><button class="next-image" type="button" aria-label="Next image">→</button></div></div>
+  <div class="lightbox-image"><img src="assets/images/umbratic-workspace.jpg" alt="" width="1920" height="1080"></div>
+  <div class="lightbox-footer"><p></p><div><a class="original-image" href="assets/images/umbratic-workspace.jpg" target="_blank" rel="noopener noreferrer">Original image <span aria-hidden="true">↗</span></a><button class="previous-image" type="button" aria-label="Previous image">←</button><button class="next-image" type="button" aria-label="Next image">→</button></div></div>
 </dialog>
 </body>
 </html>
