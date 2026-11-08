@@ -1,12 +1,12 @@
 # Carmine Potirniche
 
-A single-page portfolio in HTML, CSS, and vanilla JavaScript. Geist typography and GSAP motion are self-hosted. There are no third-party requests, analytics, or model calls at runtime.
+A single-page portfolio in HTML, CSS, and vanilla JavaScript. Geist typography is self-hosted. There are no third-party requests, analytics, or model calls at runtime.
 
 ## Run and deploy
 
 Run `npm run dev` to preview on localhost:4173. Verify with `npm run check`, `npm test`, and browser checks at desktop and phone widths. `npm run build` stages only public files into `dist/`.
 
-The production target is Cloudflare Pages project `carmine-portfolio`, with `carminepotirniche.com` and `www.carminepotirniche.com` as custom domains. The GitHub integration builds and deploys `main` automatically. Deploy `dist/` with Wrangler for a manual release. The www address redirects to the apex through `_redirects`. The site needs no Node server or VPS in production. The local Node server remains for preview and verification.
+The production target is Cloudflare Pages project `carmine-portfolio`, with `carminepotirniche.com` and `www.carminepotirniche.com` as custom domains. Deploy `dist/` with Wrangler. Automatic deployments from `main` require the Cloudflare GitHub installation to include this repository. The www address redirects to the apex through a Cloudflare Single Redirect rule that preserves paths and query strings. `_redirects` handles the legacy page URLs. The site needs no Node server or VPS in production. The local Node server remains for preview and verification.
 
 ## Content and design
 
@@ -18,7 +18,7 @@ Screenshots open in a keyboard-accessible viewer with arrow navigation, Escape, 
 
 ## Resume
 
-`resume/content.json` holds the text; `resume/template.tex` holds the layout and contacts. `resume/Carmine-Potirniche-Resume.tex` is the existing document edited in Codex's native LaTeX editor. The user-supplied layout retains its fonts, margins, spacing, contact header, and section order. Crytica is the sole Experience entry; Umbratic, UpDrafted, and GamePack are Projects. Infernal remains on the portfolio. The October 12 revision adds confirmed RHEL 9 deployment, testing, leadership coordination, and AI-agent orchestration experience. The public resume download has been refreshed from the current source for resumed applications.
+`resume/content.json` holds the text; `resume/template.tex` holds the layout and contacts. `resume/Carmine-Potirniche-Resume.tex` is the existing document edited in Codex's native LaTeX editor. The user-supplied layout retains its fonts, margins, spacing, contact header, and section order. Crytica is the sole Experience entry; Umbratic, UpDrafted, and GamePack are Projects. The homepage curates Umbratic and GamePack. The October 12 revision adds confirmed RHEL 9 deployment, testing, leadership coordination, and AI-agent orchestration experience. The public resume download has been refreshed from the current source for resumed applications.
 
 Validate source edits with the built-in compiler. When a PDF export is authorized, `python tools/render-resume.py --engine PATH` rebuilds the source, verifies one Letter page, extractable text, and no overflow, and updates the portfolio download plus `output/pdf/`. It needs `pypdf` and Tectonic or pdfLaTeX. Render the preview with:
 
@@ -42,6 +42,6 @@ Original screenshot bytes are preserved. CSS crops and frames images for layout.
 
 ## Checks
 
-`npm run check` verifies page structure, references, accessibility IDs, and resume files. `npm test` verifies production proxy reachability, public downloads, and source-file exclusion. Browser review covers desktop, tablet, and phone widths, project controls, image navigation, focus return, and horizontal overflow. Local review captures can be stored in ignored `.local/review/`; the final desktop and mobile first-screen captures are in `output/portfolio-preview.jpg` and `output/portfolio-preview-mobile.jpg`.
+`npm run check` verifies page structure, references, accessibility IDs, and resume files. `npm test` verifies production proxy reachability, public downloads, and source-file exclusion. Browser review covers desktop and phone layouts, project controls, image navigation, focus return, and horizontal overflow. Local review captures can be stored in ignored `.local/review/`.
 
 The revised source passes the native compiler and a temporary non-layout page-count assertion; the delivered source contains no added assertion. Build and server checks pass. Earlier PDF export and Lighthouse measurements are recorded with their dates in `resume/sources.md`; they precede the latest wording changes. Reports are in `.local/review/`.
