@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Carmine Potirniche, software engineer at Crytica Security and creator of Umbratic. Creator of Umbratic and GamePack. Desktop interfaces, native runtimes, and security systems.">
-<meta name="theme-color" content="#111214">
+<meta name="description" content="Carmine Potirniche, software engineer at Crytica Security. Creator of Umbratic and GamePack. Desktop interfaces, native runtimes, and security systems.">
+<meta name="theme-color" content="#ededed">
 <title>Carmine Potirniche - Software Engineer</title>
 <link rel="canonical" href="https://carminepotirniche.com/">
 <meta property="og:type" content="website">
@@ -21,56 +21,38 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header wrap">
-  <a class="identity" href="#main">Carmine Potirniche<span>Software Engineer</span></a>
+<header class="site-header">
+  <a class="identity" href="#main">Carmine Potirniche</a>
   <nav aria-label="Portfolio sections"><a href="#work">Selected work</a><a href="#crytica">Experience</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a></nav>
 </header>
-<main id="main">
-  <section class="hero wrap" aria-labelledby="intro-title">
-    <div class="hero-copy">
-      <h1 id="intro-title">Carmine<br>Potirniche.</h1>
-      <p class="hero-description">I make software I want to use. AI workspaces, native video tools, and the systems underneath them. Software engineer at Crytica Security.</p>
-      <div class="hero-actions"><a class="button primary" href="#work">See my work <span aria-hidden="true">↘</span></a><a class="resume-link" href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a></div>
-    </div>
-    <figure class="hero-visual">
-      <a class="image-button hero-screen" href="assets/images/umbratic-workspace.jpg" data-lightbox aria-label="Enlarge Umbratic workspace screenshot">
-        <img src="assets/images/umbratic-workspace.jpg" alt="Umbratic's private AI workspace showing a request, tool activity, results, and files ready for review" width="1920" height="1080" fetchpriority="high"><span class="expand-image" aria-hidden="true">↗</span>
-      </a>
-      <figcaption><img src="assets/images/umbratic-mark.svg" alt="" width="22" height="22"><span>Umbratic<span>Desktop application · Rust runtime · Go gateway</span></span><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer" aria-label="Visit Umbratic">↗</a></figcaption>
-    </figure>
+<main id="main" class="portfolio-shell">
+  <section class="hero" aria-labelledby="intro-title">
+    <h1 id="intro-title">Carmine <span>Potirniche</span></h1>
+    <div class="intro-line"><p>I build the software I want to use.<br>AI workspaces, native video tools, and the systems underneath.</p><a class="glass-button" href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a></div>
   </section>
-  <section class="work wrap" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><h2 id="work-title">Two projects. Every layer.</h2><p>From the interface you touch to the runtime that makes it work.</p></div>
-    <div class="project-explorer" aria-label="Selected projects">
-      <article class="project is-active" id="umbratic" aria-labelledby="umbratic-title">
-        <h3 class="project-heading" id="umbratic-title">Umbratic</h3>
-        <img class="project-cover" src="assets/images/umbratic-review.jpg" alt="Umbratic’s current code review with compact feedback, layout, and editor controls" width="1920" height="1080" loading="lazy">
-        <div class="project-body" id="umbratic-body">
-          <p class="project-role">Creator &amp; Engineer <span>Project · 2025 - present</span></p>
-          <p class="project-lead">The AI workspace I build in, every day.</p>
-          <dl class="project-facts"><div><dt>Architecture</dt><dd>Electron and React desktop, Rust execution runtime, and a Go gateway. Local models, your own server, ChatGPT, or Claude.</dd></div><div><dt>Runtime design</dt><dd>Dependency-aware parallel tools, context compaction, resumable state, bounded retries, and permission boundaries.</dd></div><div><dt>Engineering</dt><dd>I define interfaces and acceptance criteria, direct scoped agents, review patches, and validate the integrated system.</dd></div></dl>
-          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>Image references, project chats, live steering, queued prompts, and a compact review panel. File-level feedback and editor shortcuts keep the next step close. The runtime handles permissions, cancellation, context, and artifact tools.</p><p>Open source under the MIT License. I use it as a working environment and keep improving the details as I go.</p></details>
-          <div class="project-links"><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer">Explore Umbratic <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/umbratic-review.jpg" data-lightbox data-image="assets/images/umbratic-review.jpg" data-alt="Umbratic code review with sample workspace changes" data-caption="Reviewable changes in Umbratic. Sample workspace.">View screenshot <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </article>
-      <article class="project" id="gamepack" aria-labelledby="gamepack-title">
-        <h3 class="project-heading" id="gamepack-title">GamePack</h3>
-        <img class="project-cover gamepack-cover" src="assets/images/gamepack-review.png" alt="GamePack's native video review workspace with blue frame annotations, a comment and reply, and numbered timeline markers" width="2788" height="1664" loading="lazy">
-        <div class="project-body" id="gamepack-body">
-          <p class="project-role">Creator &amp; Lead Engineer <span>In development</span></p>
-          <p class="project-lead">Offline video review, with drawings and conversations tied to the exact frame.</p>
-          <dl class="project-facts"><div><dt>Architecture</dt><dd>Shared React Native/TypeScript interface, native macOS and Windows playback hosts, and a Rust/SQLite engine connected through CXX.</dd></div><div><dt>Review workflow</dt><dd>Organize footage into projects, annotate a frozen frame, and discuss it in threaded comments. Review playback stops at commented frames.</dd></div><div><dt>Engineering</dt><dd>I build across the interface, native media integration, and local storage, keeping playback, drawings, and comment markers in sync.</dd></div></dl>
-          <details class="engineering-details"><summary>Engineering details <span aria-hidden="true">+</span></summary><p>AVPlayer on macOS and MediaPlayer on Windows handle native playback. Frame stepping, Watch/Review modes, and zoom connect the player to the annotation workspace.</p><p>Media imports use incremental BLAKE3 hashing and verified copies to avoid duplicate files. SQLite transactions save comments and drawings together; stable draft IDs make posting safe to retry.</p></details>
-          <div class="project-links"><a href="https://github.com/Potirniche-Carmine/GamePack" target="_blank" rel="noopener noreferrer">Explore GamePack <span aria-hidden="true">↗</span></a><a class="text-button" href="assets/images/gamepack-review.png" data-lightbox data-image="assets/images/gamepack-review.png" data-alt="GamePack showing frame annotations, a threaded conversation, and review timeline markers over sample Earth footage" data-caption="GamePack's native macOS app, with sample footage and demo comments. In development.">View screenshot <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </article>
-    </div>
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="work-navigation"><h2 id="work-title">Selected work</h2><nav aria-label="Projects"><a href="#umbratic">Umbratic</a><a href="#gamepack">GamePack</a></nav></div>
+    <article class="project project-umbratic" id="umbratic" aria-labelledby="umbratic-title">
+      <figure class="project-stage">
+        <a class="image-button" href="assets/images/umbratic-workspace.jpg" data-lightbox data-caption="Umbratic’s current desktop workspace, with sample content." aria-label="Enlarge Umbratic workspace screenshot"><img class="project-cover" src="assets/images/umbratic-workspace.jpg" alt="Umbratic’s workspace showing a conversation, project files, and compact review controls" width="1280" height="720" fetchpriority="high"></a>
+        <figcaption>Umbratic <span>Desktop AI workspace</span><a href="https://umbratic.ai" target="_blank" rel="noopener noreferrer" aria-label="Explore Umbratic">↗</a></figcaption>
+      </figure>
+      <div class="project-story">
+        <div class="project-intro"><h3 id="umbratic-title">My everyday<br>AI workspace</h3><p>A personal project that became the place I build everything else. Code, files, documents, and the conversation in one workspace.</p><a class="text-link" href="https://umbratic.ai" target="_blank" rel="noopener noreferrer">Explore Umbratic <span aria-hidden="true">↗</span></a></div>
+        <div class="project-depth"><p class="project-role">Creator &amp; Engineer <span>2025 – present</span></p><dl class="project-facts"><div><dt>One interface, your choice of model</dt><dd>ChatGPT, Claude, local models, or your own server. An Electron and React desktop connects to a Rust runtime and Go gateway.</dd></div><div><dt>Built to keep you involved</dt><dd>Steer a running task, queue what comes next, review changes, and leave feedback directly on the file.</dd></div></dl><details class="engineering-details"><summary>Inside the engineering <span aria-hidden="true">+</span></summary><p>Dependency-aware parallel tools, context compaction, resumable state, bounded retries, and permission boundaries. I define interfaces and acceptance criteria, direct scoped agents, review patches, and validate the integrated system.</p><a href="assets/images/umbratic-review.jpg" data-lightbox data-image="assets/images/umbratic-review.jpg" data-alt="Umbratic code review with sample workspace changes" data-caption="Umbratic’s per-file review controls. Sample workspace.">View code review <span aria-hidden="true">↗</span></a></details></div>
+      </div>
+    </article>
+    <article class="project project-gamepack" id="gamepack" aria-labelledby="gamepack-title">
+      <div class="gamepack-intro"><h3 id="gamepack-title">GamePack</h3><p class="project-lead">A conversation.<br>At the exact frame.</p><p>Offline video review with native playback, frame drawings, and threaded feedback.</p><a class="text-link" href="https://github.com/Potirniche-Carmine/GamePack" target="_blank" rel="noopener noreferrer">Explore GamePack <span aria-hidden="true">↗</span></a></div>
+      <figure class="project-stage"><a class="image-button" href="assets/images/gamepack-review.png" data-lightbox data-caption="GamePack’s native macOS app, with sample footage and demo comments. In development." aria-label="Enlarge GamePack screenshot"><img class="project-cover" src="assets/images/gamepack-review.png" alt="GamePack’s native video review workspace with frame annotations, a threaded conversation, and timeline markers" width="2788" height="1664" loading="lazy"></a><figcaption>Native video review <span>In development</span></figcaption></figure>
+      <div class="gamepack-engineering"><p class="project-role">Creator &amp; Lead Engineer</p><dl class="project-facts"><div><dt>Native where it matters</dt><dd>AVPlayer on macOS, MediaPlayer on Windows, and a shared React Native interface. A Rust and SQLite engine keeps the project local.</dd></div><div><dt>Every detail stays in sync</dt><dd>Drawings, comments, playback, and timeline markers share the same frame. Verified media copies and transactions protect the work.</dd></div></dl><details class="engineering-details"><summary>Inside the engineering <span aria-hidden="true">+</span></summary><p>A CXX bridge connects the native hosts to Rust. Incremental BLAKE3 hashing avoids duplicate media, while stable draft IDs make posting comments safe to retry. Frame stepping and Watch/Review modes connect playback to the annotation workspace.</p></details></div>
+    </article>
   </section>
-  <article class="crytica wrap" id="crytica" aria-labelledby="crytica-title">
-    <div><h2 id="crytica-title">Crytica Security</h2><p class="project-role">Software Engineer <span>Nov. 2025 - present</span></p></div>
-    <div><p class="crytica-lead">Security software, from requirements to installation.</p><p>I architected and developed a multi-tenant administration console in JavaScript/PHP over a C backend, plus a RHEL 9 bootstrap script and installer wizard that deploy the full product across 3–12 servers. I own requirements, delivery milestones, and release readiness in collaboration with leadership.</p><p class="crytica-detail">Across the project, I orchestrated hundreds of AI agents and subagents, reviewed and integrated their work, and validated the product with 100+ automated tests and black-box end-to-end tests of user input flows. Centralized authorization and parameterized SQL protect console access; subprocess isolation improves synchronization across 9+ ledgers.</p></div>
+  <article class="crytica" id="crytica" aria-labelledby="crytica-title">
+    <div class="experience-title"><h2 id="crytica-title">Crytica Security</h2><p>Software Engineer <span>November 2025 – present</span></p></div>
+    <div class="experience-story"><h3>From the security console<br>to the servers it runs on</h3><p>I architected and developed a multi-tenant administration console over a C backend, plus the RHEL 9 bootstrap and installer that deploy the product. I own requirements, milestones, and release readiness with leadership.</p><div class="experience-proof"><p><strong>3–12</strong><span>servers per deployment</span></p><p><strong>100+</strong><span>automated tests</span></p></div><details class="engineering-details"><summary>More about my work <span aria-hidden="true">+</span></summary><p>The console combines JavaScript/PHP with centralized authorization and parameterized SQL. Subprocess isolation improves synchronization across 9+ ledgers. I orchestrated hundreds of AI agents and subagents, reviewed and integrated their work, and validated user input flows with black-box end-to-end tests.</p></details></div>
   </article>
-  <footer class="contact wrap" id="contact" aria-labelledby="contact-title"><div><h2 id="contact-title">Let’s build something useful.</h2><a class="contact-email" href="mailto:potirnichecarmine@gmail.com">potirnichecarmine@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a><a href="https://github.com/Potirniche-Carmine" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/carmineap" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div><div class="footer-note"><p>Carmine Potirniche <span>Reno, Nevada</span></p><p>B.S. Computer Science &amp; Engineering, UNR <span>Statistics minor, 2025</span></p></div></footer>
+  <footer class="contact" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Let’s make<br>something useful</h2><a class="contact-email" href="mailto:potirnichecarmine@gmail.com">potirnichecarmine@gmail.com <span aria-hidden="true">↗</span></a><div class="footer-bottom"><p>Carmine Potirniche<span>Reno, Nevada</span></p><div class="contact-links"><a href="resume/Carmine-Potirniche-Resume.pdf" download>Résumé <span aria-hidden="true">↓</span></a><a href="https://github.com/Potirniche-Carmine" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://linkedin.com/in/carmineap" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div></footer>
 </main>
 <dialog class="lightbox" aria-label="Project image viewer">
   <div class="lightbox-toolbar"><span class="image-count"></span><button type="button" class="close-image">Close <span aria-hidden="true">×</span></button></div>

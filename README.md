@@ -12,7 +12,7 @@ The production target is Cloudflare Pages project `carmine-portfolio`, with `car
 
 Two substantial personal projects lead the portfolio, Umbratic and GamePack, followed by Crytica Security experience. Each project has visible imagery, a concise architecture explanation, optional engineering details, and links to source or the project website. The full résumé remains available separately.
 
-The design uses self-hosted Geist, large personal typography, a muted green glass navigation surface, soft refracted edges, and real product captures. Native scrolling, focus states, reduced motion, reduced transparency, and increased contrast are supported. No runtime third-party requests, analytics, or animation dependencies are required.
+The design uses self-hosted Geist, large personal typography, a neutral silver glass navigation surface, one continuous translucent canvas, soft refracted edges, and real product captures. Native scrolling, focus states, reduced motion, reduced transparency, and increased contrast are supported. No runtime third-party requests, analytics, or animation dependencies are required.
 
 Screenshots open in a keyboard-accessible viewer with arrow navigation, Escape, and focus return. Without JavaScript they open as ordinary image links. Umbratic captures were refreshed from the actual development renderer on November 8, 2026 with clearly identified sample content. GamePack retains its authentic native app capture.
 
