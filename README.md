@@ -6,7 +6,7 @@ A single-page portfolio in HTML, CSS, and vanilla JavaScript. Geist typography i
 
 Run `npm run dev` to preview on localhost:4173. Verify with `npm run check`, `npm test`, and browser checks at desktop and phone widths. `npm run build` stages only public files into `dist/`.
 
-The production target is Cloudflare Pages project `carmine-portfolio`, with `carminepotirniche.com` and `www.carminepotirniche.com` as custom domains. Deploy `dist/` with Wrangler. Automatic deployments from `main` require the Cloudflare GitHub installation to include this repository. The www address redirects to the apex through a Cloudflare Single Redirect rule that preserves paths and query strings. `_redirects` handles the legacy page URLs. The site needs no Node server or VPS in production. The local Node server remains for preview and verification.
+The production target is Cloudflare Pages project `carmine-portfolio`, with `carminepotirniche.com` and `www.carminepotirniche.com` as custom domains. Cloudflare builds and deploys `main` through the connected GitHub installation. Deploy `dist/` with Wrangler for a manual release. The www address redirects to the apex through a Cloudflare Single Redirect rule that preserves paths and query strings. `_redirects` handles the legacy page URLs. The site needs no Node server or VPS in production. The local Node server remains for preview and verification.
 
 ## Content and design
 
