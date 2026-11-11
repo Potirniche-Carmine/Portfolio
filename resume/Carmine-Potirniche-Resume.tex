@@ -2,6 +2,9 @@
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
@@ -29,7 +32,7 @@
 \setlength{\parskip}{0pt}
 
 \titleformat{\section}
-  {\scshape\raggedright\large}
+  {\bfseries\raggedright\large}
   {}{0em}{}
   [\color{black}\titlerule]
 \titlespacing*{\section}{0pt}{8pt}{5pt}
@@ -38,8 +41,9 @@
   \pdfgentounicode=1
 \fi
 
+\newcommand{\resumeBody}{\fontsize{10.5}{12.5}\selectfont}
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1}}
+  \item\resumeBody{{#1}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -65,11 +69,12 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Carmine Potirniche} \\ \vspace{5pt}
-    \normalsize (725) 910-8625 $|$
-    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com} $|$
+    {\fontsize{25}{28}\selectfont\textbf{Carmine Potirniche}} \\[4pt]
+    {\small Reno, NV $|$ (725) 910-8625 $|$
+    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com}} \\[2pt]
+    {\small \href{https://carminepotirniche.com}{carminepotirniche.com} $|$
     \href{https://linkedin.com/in/carmineap}{linkedin.com/in/carmineap} $|$
-    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}
+    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}}
 \end{center}
 \vspace{-3pt}
 
@@ -79,34 +84,36 @@
     {Crytica Security}{Reno, NV}
     {Software Engineer $|$ Cybersecurity startup}{Nov. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Architected and developed Crytica's multi-tenant administration console in JavaScript/PHP with a C backend, centralized authorization, and parameterized SQL; owned requirements, delivery milestones, and release readiness for the console and installer in collaboration with leadership.}
-      \resumeItem{Built a RHEL 9 bootstrap script and installer wizard for deploying the full product across \textbf{3--12 servers}; added retries and timeouts and reduced deployment time to \textbf{under 5 minutes}.}
-      \resumeItem{Orchestrated \textbf{hundreds of AI agents and subagents}, reviewing and integrating their work; validated the product with \textbf{100+ automated tests} and black-box end-to-end testing of user input flows.}
-      \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}, isolating subprocess failures and reducing synchronization time by \textbf{85\%}.}
+      \resumeItem{Architected and built Crytica's multi-tenant administration platform as sole developer: a C backend service, CLI, and JavaScript/PHP web console with \textbf{100+ API operations}, from requirements to release.}
+      \resumeItem{Designed its security model: privilege-separated services, a schema-validated binary IPC protocol, database-enforced RBAC with per-tenant scoping, and a fixed catalog of \textbf{300+ prepared SQL statements}.}
+      \resumeItem{Built the RHEL 9 installer and setup wizard, rewrote the SSH deployment daemon, and wrote a checksum-verified schema migrator; cut full deployments across \textbf{3--12 servers} to \textbf{under 5 minutes}.}
+      \resumeItem{Orchestrated \textbf{hundreds of AI agents and subagents}, gating their work with code review, \textbf{2,600+ unit tests} run under sanitizers in CI, and black-box end-to-end installs of multi-server environments.}
+      \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}, cutting sync time by \textbf{85\%}.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {\textbf{Umbratic} $|$ \emph{Private AI Platform}}{Mar. 2025 -- Present}
+    {\textbf{Umbratic} $|$ \emph{AI Workspace \& Agent Runtime}}{Mar. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Built a private AI platform with an Electron/React desktop app, Rust runtime, and Go gateway supporting local and company-managed models.}
-      \resumeItem{Implemented parallel tool execution, context management, resumable conversations, and permission controls for local and remote tasks.}
-      \resumeItem{Added Qdrant document retrieval with team access controls and tools for working with documents, spreadsheets, presentations, and PDFs.}
-      \resumeItem{Reduced search latency from 15 seconds to \textbf{16 ms}, cold starts by \textbf{96\%}, and idle memory by \textbf{88\%} during the native rewrite.}
+      \resumeItem{Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference, self-hosted models, and integrations with Codex and Claude Code.}
+      \resumeItem{Implemented an \textbf{agent execution harness} with dependency-aware parallel tools, context compaction, resumable state, bounded retries, cancellation, and permission checks for workspace operations.}
+      \resumeItem{Implemented team-filtered Qdrant retrieval, device enrollment, and revocation for managed model access.}
+      \resumeItem{Built tools to create and edit documents, spreadsheets, presentations, and PDFs within the AI workspace.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{GamePack} $|$ \emph{Native Video Review Application}}{Oct. 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Built a cross-platform video review application with React Native/TypeScript, native AVPlayer/MediaPlayer playback, and a Rust/SQLite engine; synchronized frame and timed annotations with threaded feedback.}
+      \resumeItem{Designed durable local storage with transactional comment posting, recoverable drafts, and BLAKE3-verified media imports to prevent duplicate copies and make retries idempotent.}
+      \resumeItem{Automated CI/CD for \textbf{macOS and Windows on ARM64/x64}, including native tests, macOS signing and notarization, SHA-256-verified updates, and rollback on failed installation.}
     \resumeItemListEnd
   \resumeProjectHeading
     {\textbf{UpDrafted} $|$ \emph{Athlete Recruiting Platform}}{May 2025 -- May 2026}
     \resumeItemListStart
-      \resumeItem{Designed and built Next.js/TypeScript recruiting and administration apps for athlete discovery, verification, messaging, and moderation.}
-      \resumeItem{Designed PostgreSQL/Drizzle models with \textbf{14 row-level security policies} and transaction-scoped user context; encrypted stored messages with AES-256-GCM.}
-      \resumeItem{Integrated Stripe subscriptions, signed webhooks, Cloudflare R2 storage, and Docker deployment pipelines with GitHub Actions.}
-    \resumeItemListEnd
-  \resumeProjectHeading
-    {\textbf{GamePack} $|$ \emph{Video Review App}}{In development}
-    \resumeItemListStart
-      \resumeItem{Build an offline video review app with React Native/TypeScript, native macOS and Windows playback, and Rust/SQLite storage; synchronize frame annotations, threaded comments, and timeline markers.}
+      \resumeItem{Built Next.js/TypeScript recruiting and administration apps with athlete discovery, verification, moderation, Stripe subscriptions, signed webhooks, and Cloudflare R2 storage.}
+      \resumeItem{Implemented \textbf{14 PostgreSQL row-level security policies}, transaction-scoped user context, and AES-256-GCM message encryption; automated Docker builds and deployments with GitHub Actions.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -119,11 +126,12 @@
 
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
-  \normalsize\item{
-    \textbf{Languages:} TypeScript/JavaScript, Rust, Go, C, C\#, Python, SQL, PHP \\
-    \textbf{Full Stack \& Systems:} React, Next.js, Electron, PostgreSQL, API design, access control, concurrency \\
-    \textbf{AI \& Agents:} LLM integration, tool calling, RAG, context management, AI-assisted development \\
-    \textbf{Tools \& Platforms:} Linux, Docker, GitHub Actions, Unity, Qdrant, vLLM, llama.cpp
+  \resumeBody\item{
+    \textbf{Languages:} C, TypeScript/JavaScript, Rust, Go, Python, SQL, PHP, Bash, C\# \\
+    \textbf{Systems \& Delivery:} Linux (RHEL), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD \\
+    \textbf{Frameworks \& Data:} React, React Native, Next.js, Electron, MariaDB/MySQL, PostgreSQL, REST APIs \\
+    \textbf{Security \& Testing:} RBAC, row-level security, privilege separation, encryption, ASan/UBSan, Playwright \\
+    \textbf{AI \& Agents:} Agent orchestration, tool calling, context compaction, RAG, Qdrant, llama.cpp, vLLM
   }
 \end{itemize}
 

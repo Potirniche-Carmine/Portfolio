@@ -12,23 +12,34 @@
       "dates": "Nov. 2025 - Present",
       "location": "Reno, NV",
       "bullets": [
-        "Architected and developed Crytica's multi-tenant administration console in JavaScript/PHP with a C backend, centralized authorization, and parameterized SQL; owned requirements, delivery milestones, and release readiness for the console and installer in collaboration with leadership.",
-        "Built a RHEL 9 bootstrap script and installer wizard for deploying the full product across <b>3--12 servers</b>; added retries and timeouts and reduced deployment time to <b>under 5 minutes</b>.",
-        "Orchestrated <b>hundreds of AI agents and subagents</b>, reviewing and integrating their work; validated the product with <b>100+ automated tests</b> and black-box end-to-end testing of user input flows.",
-        "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>, isolating subprocess failures and reducing synchronization time by <b>85%</b>."
+        "Architected and built Crytica's multi-tenant administration platform as sole developer: a C backend service, CLI, and JavaScript/PHP web console with <b>100+ API operations</b>, from requirements to release.",
+        "Designed its security model: privilege-separated services, a schema-validated binary IPC protocol, database-enforced RBAC with per-tenant scoping, and a fixed catalog of <b>300+ prepared SQL statements</b>.",
+        "Built the RHEL 9 installer and setup wizard, rewrote the SSH deployment daemon, and wrote a checksum-verified schema migrator; cut full deployments across <b>3--12 servers</b> to <b>under 5 minutes</b>.",
+        "Orchestrated <b>hundreds of AI agents and subagents</b>, gating their work with code review, <b>2,600+ unit tests</b> run under sanitizers in CI, and black-box end-to-end installs of multi-server environments.",
+        "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>, cutting sync time by <b>85%</b>."
       ]
     }
   ],
   "projects": [
     {
       "name": "Umbratic",
-      "role": "Private AI Platform",
+      "role": "AI Workspace & Agent Runtime",
       "dates": "Mar. 2025 - Present",
       "bullets": [
-        "Built a private AI platform with an Electron/React desktop app, Rust runtime, and Go gateway supporting local and company-managed models.",
-        "Implemented parallel tool execution, context management, resumable conversations, and permission controls for local and remote tasks.",
-        "Added Qdrant document retrieval with team access controls and tools for working with documents, spreadsheets, presentations, and PDFs.",
-        "Reduced search latency from 15 seconds to <b>16 ms</b>, cold starts by <b>96%</b>, and idle memory by <b>88%</b> during the native rewrite."
+        "Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference, self-hosted models, and integrations with Codex and Claude Code.",
+        "Implemented an <b>agent execution harness</b> with dependency-aware parallel tools, context compaction, resumable state, bounded retries, cancellation, and permission checks for workspace operations.",
+        "Implemented team-filtered Qdrant retrieval, device enrollment, and revocation for managed model access.",
+        "Built tools to create and edit documents, spreadsheets, presentations, and PDFs within the AI workspace."
+      ]
+    },
+    {
+      "name": "GamePack",
+      "role": "Native Video Review Application",
+      "dates": "Oct. 2026 - Present",
+      "bullets": [
+        "Built a cross-platform video review application with React Native/TypeScript, native AVPlayer/MediaPlayer playback, and a Rust/SQLite engine; synchronized frame and timed annotations with threaded feedback.",
+        "Designed durable local storage with transactional comment posting, recoverable drafts, and BLAKE3-verified media imports to prevent duplicate copies and make retries idempotent.",
+        "Automated CI/CD for <b>macOS and Windows on ARM64/x64</b>, including native tests, macOS signing and notarization, SHA-256-verified updates, and rollback on failed installation."
       ]
     },
     {
@@ -36,17 +47,8 @@
       "role": "Athlete Recruiting Platform",
       "dates": "May 2025 - May 2026",
       "bullets": [
-        "Designed and built Next.js/TypeScript recruiting and administration apps for athlete discovery, verification, messaging, and moderation.",
-        "Designed PostgreSQL/Drizzle models with <b>14 row-level security policies</b> and transaction-scoped user context; encrypted stored messages with AES-256-GCM.",
-        "Integrated Stripe subscriptions, signed webhooks, Cloudflare R2 storage, and Docker deployment pipelines with GitHub Actions."
-      ]
-    },
-    {
-      "name": "GamePack",
-      "role": "Video Review App",
-      "dates": "In development",
-      "bullets": [
-        "Build an offline video review app with React Native/TypeScript, native macOS and Windows playback, and Rust/SQLite storage; synchronize frame annotations, threaded comments, and timeline markers."
+        "Built Next.js/TypeScript recruiting and administration apps with athlete discovery, verification, moderation, Stripe subscriptions, signed webhooks, and Cloudflare R2 storage.",
+        "Implemented <b>14 PostgreSQL row-level security policies</b>, transaction-scoped user context, and AES-256-GCM message encryption; automated Docker builds and deployments with GitHub Actions."
       ]
     }
   ],
@@ -59,19 +61,23 @@
   "skills": [
     [
       "Languages",
-      "TypeScript/JavaScript, Rust, Go, C, C#, Python, SQL, PHP"
+      "C, TypeScript/JavaScript, Rust, Go, Python, SQL, PHP, Bash, C#"
     ],
     [
-      "Full Stack & Systems",
-      "React, Next.js, Electron, PostgreSQL, API design, access control, concurrency"
+      "Systems & Delivery",
+      "Linux (RHEL), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD"
+    ],
+    [
+      "Frameworks & Data",
+      "React, React Native, Next.js, Electron, MariaDB/MySQL, PostgreSQL, REST APIs"
+    ],
+    [
+      "Security & Testing",
+      "RBAC, row-level security, privilege separation, encryption, ASan/UBSan, Playwright"
     ],
     [
       "AI & Agents",
-      "LLM integration, tool calling, RAG, context management, AI-assisted development"
-    ],
-    [
-      "Tools & Platforms",
-      "Linux, Docker, GitHub Actions, Unity, Qdrant, vLLM, llama.cpp"
+      "Agent orchestration, tool calling, context compaction, RAG, Qdrant, llama.cpp, vLLM"
     ]
   ]
 }

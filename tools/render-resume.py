@@ -57,7 +57,7 @@ def create_source(data):
         "    {" + tex(edu["degree"]) + "}{" + tex(edu["date"]) + "}",
         r"\resumeSubHeadingListEnd", "", r"\section{Technical Skills}",
         r"\begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]",
-        r"  \normalsize\item{",
+        r"  \resumeBody\item{",
     ])
     for index, (label, value) in enumerate(data["skills"]):
         ending = r" \\" if index < len(data["skills"]) - 1 else ""

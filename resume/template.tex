@@ -2,6 +2,9 @@
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{enumitem}
@@ -29,7 +32,7 @@
 \setlength{\parskip}{0pt}
 
 \titleformat{\section}
-  {\scshape\raggedright\large}
+  {\bfseries\raggedright\large}
   {}{0em}{}
   [\color{black}\titlerule]
 \titlespacing*{\section}{0pt}{8pt}{5pt}
@@ -38,8 +41,9 @@
   \pdfgentounicode=1
 \fi
 
+\newcommand{\resumeBody}{\fontsize{10.5}{12.5}\selectfont}
 \newcommand{\resumeItem}[1]{
-  \item\small{{#1}}
+  \item\resumeBody{{#1}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -65,11 +69,12 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Carmine Potirniche} \\ \vspace{5pt}
-    \normalsize (725) 910-8625 $|$
-    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com} $|$
+    {\fontsize{25}{28}\selectfont\textbf{Carmine Potirniche}} \\[4pt]
+    {\small Reno, NV $|$ (725) 910-8625 $|$
+    \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com}} \\[2pt]
+    {\small \href{https://carminepotirniche.com}{carminepotirniche.com} $|$
     \href{https://linkedin.com/in/carmineap}{linkedin.com/in/carmineap} $|$
-    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}
+    \href{https://github.com/Potirniche-Carmine}{github.com/Potirniche-Carmine}}
 \end{center}
 \vspace{-3pt}
 

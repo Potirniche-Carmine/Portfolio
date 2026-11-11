@@ -111,3 +111,53 @@ At the user's request, the overlapping ownership and console implementation bull
 
 The user requested portfolio updates to match the confirmed AI-assisted engineering work and authorized resuming applications. The hero, metadata, and social preview now describe Umbratic as a project created by Carmine; the Crytica section includes the confirmed RHEL 9 installer, 3–12 server deployment, leadership coordination, hundreds of AI agents across the project, and automated/black-box testing. Infernal remains on the portfolio. No customer use is claimed. The current public-download PDF was regenerated, verified as one Letter page with extractable text and no overflow, and visually inspected. The native LaTeX compiler also succeeded. Site build and the 40-reference checker passed; the updated hero and Crytica sections were visually checked at 1280px without horizontal overflow. These checks were completed before publication.
 
+
+## Resume and portfolio revision — November 10, 2026
+
+The supplied LaTeX attachment is the authority for personal details, education, dates other than GamePack, and Crytica. Crytica's entire Experience block is preserved verbatim. Umbratic remains a personal project. GamePack leads the projects section and expands from one bullet to three; Umbratic has three bullets and UpDrafted two. Historical Umbratic performance figures were omitted in favor of current architecture, agent execution, and access-control evidence; they were not remeasured or disputed.
+
+### Implementation evidence reviewed
+
+- GamePack: `README.md`, `docs/development.md`, `docs/ci.md`, `CHANGELOG.md`, and `.github/workflows/release.yml` establish the shared React Native/TypeScript UI, native playback, four OS/architecture build targets, signing/notarization, and release validation. The first repository commits are dated October 8, 2026, supporting the October project date.
+- GamePack: `crates/gamepack-core/src/store.rs` implements SQLite WAL/full synchronization, atomic posting under a write transaction, stable draft IDs that return an existing comment on retry, incremental BLAKE3 imports, and managed media identity. `native/macos/GPUpdater.mm` and `apps/windows/GamePack/Updater/update-core.psm1` check SHA-256 digests; update helpers and regression fixtures implement installation recovery. These support durability and release-engineering descriptions, not an assertion of audit certification or measured reliability.
+- Umbratic: `packages/runner/src/tool_scheduling.rs` separates conflicting filesystem operations and runs independent tools concurrently; `loop_runtime.rs` supports steering and continued tool execution. `permission.rs` handles approval requests and one-use responses. Context and saved-state modules, also documented in prior evidence above, support compaction and restoration.
+- Umbratic: `docs/cloud-runtimes.md` distinguishes the local Rust harness from integrations with provider-owned Codex/Claude Code runtimes. Provider runtimes retain their own execution and permission behavior; the portfolio now makes that distinction explicit.
+- Umbratic: `infrastructure/veil/internal/rag/rag_test.go` checks retrieval filtering against cross-team access; `infrastructure/veil/internal/identity/store.go` contains enrollment and revocation. Artifact support is documented in the current README and prior implementation evidence above.
+- UpDrafted: current local source at `../Updrafted` confirms 14 `pgPolicy` declarations in `packages/db/src/schema.ts`, message AES-256-GCM in `apps/web/utils/encryption.ts`, Stripe webhook handling, and Docker/Cloudflare deployment workflows. These are implementation claims; no customers, revenue, security certification, or end-to-end encryption is asserted.
+- Infernal and Rink Rumble were considered from their project documentation. Their gameplay/networking work adds breadth but was not included in the constrained one-page software/security resume. No game or application source was modified, and full project test suites were not run for this document task.
+
+### External research, accessed November 10, 2026
+
+- [Harvard MCS resume guidance](https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/): concise, active, specific, factual language; consistent formatting; prioritize relevant accomplishments and check the exported document.
+- [USAJOBS resume guidance](https://help.usajobs.gov/faq/application/documents/resume/what-to-include) and [OPM applicant guidance](https://www.opm.gov/policy-data-oversight/hiring-information/merit-hiring-plan-resources/applicant-guidance-on-the-two-page-resume-limit/): federal resumes must be no longer than two pages. Relevant employment needs title/employer, month/year dates, and hours per week. Education/GPA and other documentation depend on the requirements. This is a one-page general base, not a claim of readiness for every federal announcement; hours/week, GPA, clearance, and certifications were not invented.
+- [Leidos Software Engineering — Intelligent Platforms (Mid)](https://careers.leidos.com/jobs/18388180-software-engineering-intelligent-platforms-mid), posted October 22, 2026: backend services, agent orchestration, APIs, version-controlled/testable workflows, CI/CD, and secure deployment. The posting requires professional experience and an existing clearance; it informs capability emphasis rather than an assertion that the applicant meets its eligibility requirements.
+
+The research supports emphasizing implemented engineering and product delivery, not keyword stuffing or unsupported AI/security credentials. No single resume is presented as suitable for every job.
+
+### Verification and publication state
+
+- Tectonic 0.17.0 successfully compiled the final generated LaTeX with no overfull boxes. The PDF has one 612-by-792-point US Letter page, selectable text, and approximately 103 points below the last text. Body text is 10.5-point Helvetica; project/date headers are 10–11 points. Poppler rendered the final page for visual inspection.
+- Source generation matches `content.json` and `template.tex`. An exact source comparison confirms the Experience block matches the pasted Crytica content. PDF extraction preserves headings and technology names.
+- The local portfolio PDF download was refreshed from that source. Pre-existing deleted preview/output files were left deleted; internal validation files remain under ignored `.local/resume-build/`.
+- The existing portfolio design is retained. Hero copy, Umbratic runtime boundaries, and GamePack's annotation/storage/release descriptions were updated. The GamePack screenshot is identified as an October 2026 capture; it is not passed off as a new screenshot.
+- `npm run check` and the existing two server tests passed. The static build passed. Browser checks covered the live site's starting content and local desktop/mobile views, disclosure controls, image loading, no horizontal overflow at 390 pixels, and no logged browser warnings/errors.
+- Changes are local. No commit, push, production deployment, job application, or external message was sent.
+
+
+## Formatting and project-priority correction — November 10, 2026
+
+The user requested the original LaTeX formatting and Umbratic as the primary project. The template now matches the supplied preamble, fonts, margins, spacing, macros, and contact header exactly, with the original normal-size skills block restored. Umbratic is first with four bullets; GamePack follows with three, and UpDrafted has two. Crytica remains verbatim. The prior Helvetica layout and GamePack-first ordering above are superseded. The final source compiles to one Letter page without overflow; the rendered page was inspected and the local website download refreshed. No production deployment was performed.
+
+
+## Approved typography refinement — November 10, 2026
+
+After reviewing the font comparison, the user approved Helvetica-style typography with the original layout and Umbratic-first content. The final template retains the original margins, section order, and list spacing, adds T1-encoded Helvetica-compatible fonts through `helvet`, uses 10.5-point body text and bold section headings, and includes the portfolio URL in a two-line contact header. Umbratic remains first with four bullets; GamePack has three and UpDrafted two. All accomplishment wording, including Crytica, is unchanged from the preceding revision.
+
+Tectonic compiled the final source to one US Letter page without overflow. The final PDF embeds Nimbus Sans regular, bold, and italic; Poppler rendering was visually inspected. Text extraction preserves contacts, headings, and project content, and approximately 63.7 points remain below the last text. The local portfolio download and generated LaTeX are synchronized. No production deployment was performed.
+
+
+## Supplied resume and portfolio refresh — November 10, 2026
+
+The newly pasted LaTeX supplies the updated Crytica wording: 100+ API operations, tenant-scoped database RBAC, privilege separation and validated binary IPC, 300+ prepared statements, checksum-verified migrations, 2,600+ unit tests under sanitizers, and 85% less synchronization time. These are user-supplied experience claims, not independently audited company metrics. Content data, generated source, the public PDF, and the website now agree. The skills list matches the pasted revision. The one-page PDF was compiled without overflow and visually reviewed.
+
+The user requested a systems/architecture introduction, looser letter spacing in the name, restrained design refinement, and removal of eyebrow headings. The existing stack, native scrolling, screenshots, and accessible image viewer remain. UpDrafted is included as a concise additional project. Browser review covered the layout at the normal desktop width and 390px phone width, loaded project images, no horizontal overflow, image navigation, Escape, and focus restoration. The existing static checks and both server tests pass. Job research and application materials remain under ignored `.local/` and are excluded from the public build.
