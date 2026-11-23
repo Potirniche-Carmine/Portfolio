@@ -18,6 +18,18 @@
         "Orchestrated <b>hundreds of AI agents and subagents</b>, gating their work with code review, <b>2,600+ unit tests</b> run under sanitizers in CI, and black-box end-to-end installs of multi-server environments.",
         "Led a C synchronization rewrite across <b>9+ distributed ledgers</b>, cutting sync time by <b>85%</b>."
       ]
+    },
+    {
+      "name": "Relua (relua.us)",
+      "role": "Founder & Engineer | Desktop video review app",
+      "dates": "Oct. 2026 - Present",
+      "location": "Remote",
+      "bullets": [
+        "Founded and shipped Relua, a free macOS/Windows video annotation app; released the <b>v0.1.0 public beta</b> with signed installers for <b>4 OS/CPU targets</b>, a docs site, and Stripe-funded plans.",
+        "Architected a React Native/TypeScript interface over a <b>Rust/SQLite core</b>, bridging native AVPlayer (macOS) and MediaPlayer (Windows) playback through C++/Objective-C++ for frame-exact comments and drawings.",
+        "Designed local-first sync over iCloud Drive, Google Drive, and OneDrive folders: a two-way merge of append-only comments with last-change-wins edits that tolerates late or partial cloud writes.",
+        "Built the release path: macOS signing and notarization, <b>SHA-256-verified updates with rollback</b>, BLAKE3 content-addressed media, and a harness measuring CPU, memory, and playback."
+      ]
     }
   ],
   "projects": [
@@ -26,20 +38,9 @@
       "role": "AI Workspace & Agent Runtime",
       "dates": "Mar. 2025 - Present",
       "bullets": [
-        "Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference, self-hosted models, and integrations with Codex and Claude Code.",
+        "Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference (llama.cpp), self-hosted models (vLLM), and integrations with Codex and Claude Code.",
         "Implemented an <b>agent execution harness</b> with dependency-aware parallel tools, context compaction, resumable state, bounded retries, cancellation, and permission checks for workspace operations.",
-        "Implemented team-filtered Qdrant retrieval, device enrollment, and revocation for managed model access.",
-        "Built tools to create and edit documents, spreadsheets, presentations, and PDFs within the AI workspace."
-      ]
-    },
-    {
-      "name": "GamePack",
-      "role": "Native Video Review Application",
-      "dates": "Oct. 2026 - Present",
-      "bullets": [
-        "Built a cross-platform video review application with React Native/TypeScript, native AVPlayer/MediaPlayer playback, and a Rust/SQLite engine; synchronized frame and timed annotations with threaded feedback.",
-        "Designed durable local storage with transactional comment posting, recoverable drafts, and BLAKE3-verified media imports to prevent duplicate copies and make retries idempotent.",
-        "Automated CI/CD for <b>macOS and Windows on ARM64/x64</b>, including native tests, macOS signing and notarization, SHA-256-verified updates, and rollback on failed installation."
+        "Implemented team-filtered Qdrant retrieval (RAG), device enrollment, and revocation for model access."
       ]
     },
     {
@@ -47,8 +48,7 @@
       "role": "Athlete Recruiting Platform",
       "dates": "May 2025 - May 2026",
       "bullets": [
-        "Built Next.js/TypeScript recruiting and administration apps with athlete discovery, verification, moderation, Stripe subscriptions, signed webhooks, and Cloudflare R2 storage.",
-        "Implemented <b>14 PostgreSQL row-level security policies</b>, transaction-scoped user context, and AES-256-GCM message encryption; automated Docker builds and deployments with GitHub Actions."
+        "Built Next.js/TypeScript recruiting and admin apps with athlete discovery, verification, moderation, Stripe subscriptions, and signed webhooks; enforced <b>14 PostgreSQL row-level security policies</b> and AES-256-GCM message encryption."
       ]
     }
   ],
@@ -61,15 +61,15 @@
   "skills": [
     [
       "Languages",
-      "C, TypeScript/JavaScript, Rust, Go, Python, SQL, PHP, Bash, C#"
+      "C, C++, Rust, TypeScript/JavaScript, Go, Python, SQL, PHP, Bash, C#, Objective-C++"
     ],
     [
       "Systems & Delivery",
-      "Linux (RHEL), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD"
+      "Linux (RHEL 9), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD"
     ],
     [
       "Frameworks & Data",
-      "React, React Native, Next.js, Electron, MariaDB/MySQL, PostgreSQL, REST APIs"
+      "React, React Native, Next.js, Electron, SQLite, PostgreSQL, MariaDB/MySQL, REST APIs"
     ],
     [
       "Security & Testing",

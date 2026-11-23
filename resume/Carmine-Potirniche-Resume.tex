@@ -70,7 +70,7 @@
 
 \begin{center}
     {\fontsize{25}{28}\selectfont\textbf{Carmine Potirniche}} \\[4pt]
-    {\small Reno, NV $|$ (725) 910-8625 $|$
+    {\small Las Vegas, NV $|$ (725) 910-8625 $|$
     \href{mailto:potirnichecarmine@gmail.com}{potirnichecarmine@gmail.com}} \\[2pt]
     {\small \href{https://carminepotirniche.com}{carminepotirniche.com} $|$
     \href{https://linkedin.com/in/carmineap}{linkedin.com/in/carmineap} $|$
@@ -90,6 +90,15 @@
       \resumeItem{Orchestrated \textbf{hundreds of AI agents and subagents}, gating their work with code review, \textbf{2,600+ unit tests} run under sanitizers in CI, and black-box end-to-end installs of multi-server environments.}
       \resumeItem{Led a C synchronization rewrite across \textbf{9+ distributed ledgers}, cutting sync time by \textbf{85\%}.}
     \resumeItemListEnd
+  \resumeSubheading
+    {Relua (relua.us)}{Remote}
+    {Founder \& Engineer $|$ Desktop video review app}{Oct. 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Founded and shipped Relua, a free macOS/Windows video annotation app; released the \textbf{v0.1.0 public beta} with signed installers for \textbf{4 OS/CPU targets}, a docs site, and Stripe-funded plans.}
+      \resumeItem{Architected a React Native/TypeScript interface over a \textbf{Rust/SQLite core}, bridging native AVPlayer (macOS) and MediaPlayer (Windows) playback through C++/Objective-C++ for frame-exact comments and drawings.}
+      \resumeItem{Designed local-first sync over iCloud Drive, Google Drive, and OneDrive folders: a two-way merge of append-only comments with last-change-wins edits that tolerates late or partial cloud writes.}
+      \resumeItem{Built the release path: macOS signing and notarization, \textbf{SHA-256-verified updates with rollback}, BLAKE3 content-addressed media, and a harness measuring CPU, memory, and playback.}
+    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 \section{Projects}
@@ -97,23 +106,14 @@
   \resumeProjectHeading
     {\textbf{Umbratic} $|$ \emph{AI Workspace \& Agent Runtime}}{Mar. 2025 -- Present}
     \resumeItemListStart
-      \resumeItem{Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference, self-hosted models, and integrations with Codex and Claude Code.}
+      \resumeItem{Built an Electron/React AI workspace backed by a Rust agent runtime and Go model gateway, supporting local inference (llama.cpp), self-hosted models (vLLM), and integrations with Codex and Claude Code.}
       \resumeItem{Implemented an \textbf{agent execution harness} with dependency-aware parallel tools, context compaction, resumable state, bounded retries, cancellation, and permission checks for workspace operations.}
-      \resumeItem{Implemented team-filtered Qdrant retrieval, device enrollment, and revocation for managed model access.}
-      \resumeItem{Built tools to create and edit documents, spreadsheets, presentations, and PDFs within the AI workspace.}
-    \resumeItemListEnd
-  \resumeProjectHeading
-    {\textbf{GamePack} $|$ \emph{Native Video Review Application}}{Oct. 2026 -- Present}
-    \resumeItemListStart
-      \resumeItem{Built a cross-platform video review application with React Native/TypeScript, native AVPlayer/MediaPlayer playback, and a Rust/SQLite engine; synchronized frame and timed annotations with threaded feedback.}
-      \resumeItem{Designed durable local storage with transactional comment posting, recoverable drafts, and BLAKE3-verified media imports to prevent duplicate copies and make retries idempotent.}
-      \resumeItem{Automated CI/CD for \textbf{macOS and Windows on ARM64/x64}, including native tests, macOS signing and notarization, SHA-256-verified updates, and rollback on failed installation.}
+      \resumeItem{Implemented team-filtered Qdrant retrieval (RAG), device enrollment, and revocation for model access.}
     \resumeItemListEnd
   \resumeProjectHeading
     {\textbf{UpDrafted} $|$ \emph{Athlete Recruiting Platform}}{May 2025 -- May 2026}
     \resumeItemListStart
-      \resumeItem{Built Next.js/TypeScript recruiting and administration apps with athlete discovery, verification, moderation, Stripe subscriptions, signed webhooks, and Cloudflare R2 storage.}
-      \resumeItem{Implemented \textbf{14 PostgreSQL row-level security policies}, transaction-scoped user context, and AES-256-GCM message encryption; automated Docker builds and deployments with GitHub Actions.}
+      \resumeItem{Built Next.js/TypeScript recruiting and admin apps with athlete discovery, verification, moderation, Stripe subscriptions, and signed webhooks; enforced \textbf{14 PostgreSQL row-level security policies} and AES-256-GCM message encryption.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -127,9 +127,9 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt, parsep=0pt, partopsep=0pt]
   \resumeBody\item{
-    \textbf{Languages:} C, TypeScript/JavaScript, Rust, Go, Python, SQL, PHP, Bash, C\# \\
-    \textbf{Systems \& Delivery:} Linux (RHEL), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD \\
-    \textbf{Frameworks \& Data:} React, React Native, Next.js, Electron, MariaDB/MySQL, PostgreSQL, REST APIs \\
+    \textbf{Languages:} C, C++, Rust, TypeScript/JavaScript, Go, Python, SQL, PHP, Bash, C\#, Objective-C++ \\
+    \textbf{Systems \& Delivery:} Linux (RHEL 9), systemd, SELinux, NGINX, CMake, Docker, GitHub Actions, CI/CD \\
+    \textbf{Frameworks \& Data:} React, React Native, Next.js, Electron, SQLite, PostgreSQL, MariaDB/MySQL, REST APIs \\
     \textbf{Security \& Testing:} RBAC, row-level security, privilege separation, encryption, ASan/UBSan, Playwright \\
     \textbf{AI \& Agents:} Agent orchestration, tool calling, context compaction, RAG, Qdrant, llama.cpp, vLLM
   }

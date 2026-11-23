@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 root = Path(__file__).resolve().parents[1]
 font_dirs = [Path('/System/Library/Fonts/Supplemental'), Path('C:/Windows/Fonts'),
-             Path('/usr/share/fonts/truetype/liberation2')]
+             Path('/usr/share/fonts/truetype/liberation2'), Path('/usr/share/fonts/truetype/liberation')]
 font = next((folder / name for folder in font_dirs
              for name in ['Arial.ttf', 'arial.ttf', 'LiberationSans-Regular.ttf']
              if (folder / name).is_file()), None)
@@ -20,7 +20,7 @@ draw.text((81,205),'Secure systems. Thoughtful architecture.',font=regular(32),f
 draw.text((81,258),'From architecture to release.',font=regular(27),fill='#686868')
 draw.text((81,299),'C / Rust / Go / TypeScript',font=regular(27),fill='#686868')
 draw.line((81,440,1119,440),fill='#d5d5d5',width=1)
-draw.text((81,478),'Crytica Security / Umbratic / GamePack',font=regular(25),fill='#333333')
-draw.text((81,530),'Software engineer · Reno, Nevada',font=regular(21),fill='#686868')
+draw.text((81,478),'Crytica Security / Relua / Umbratic',font=regular(25),fill='#333333')
+draw.text((81,530),'Software engineer · Las Vegas, Nevada',font=regular(21),fill='#686868')
 draw.text((817,530),'carminepotirniche.com',font=regular(21),fill='#686868')
 image.save(root/'assets/images/social-card.png', optimize=True)
