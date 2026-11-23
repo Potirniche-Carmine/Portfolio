@@ -36,7 +36,8 @@ def create_source(data):
             if key == "experience":
                 lines.extend([
                     r"  \resumeSubheading",
-                    "    {" + tex(row["name"]) + "}{" + tex(row["location"]) + "}",
+                    "    {" + tex(row["name"]) + (r" $|$ \href{" + row["url"] + "}{" + tex(row["url"].split("//")[-1]) + "}"
+                                               if row.get("url") else "") + "}{" + tex(row["location"]) + "}",
                     "    {" + tex(row["role"]) + "}{" + date(row["dates"]) + "}",
                 ])
             else:

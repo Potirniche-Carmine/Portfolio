@@ -20,16 +20,17 @@
       ]
     },
     {
-      "name": "Relua (relua.us)",
+      "name": "Relua",
       "role": "Founder & Engineer | Desktop video review app",
       "dates": "Oct. 2026 - Present",
       "location": "Remote",
       "bullets": [
         "Founded and shipped Relua, a free macOS/Windows video annotation app; released the <b>v0.1.0 public beta</b> with signed installers for <b>4 OS/CPU targets</b>, a docs site, and Stripe-funded plans.",
-        "Architected a React Native/TypeScript interface over a <b>Rust/SQLite core</b>, bridging native AVPlayer (macOS) and MediaPlayer (Windows) playback through C++/Objective-C++ for frame-exact comments and drawings.",
+        "Architected a React Native/TypeScript UI over a <b>Rust/SQLite core</b>, bridging native AVPlayer (macOS) and MediaPlayer (Windows) playback through C++/Objective-C++ for frame-exact comments.",
         "Designed local-first sync over iCloud Drive, Google Drive, and OneDrive folders: a two-way merge of append-only comments with last-change-wins edits that tolerates late or partial cloud writes.",
         "Built the release path: macOS signing and notarization, <b>SHA-256-verified updates with rollback</b>, BLAKE3 content-addressed media, and a harness measuring CPU, memory, and playback."
-      ]
+      ],
+      "url": "https://relua.us"
     }
   ],
   "projects": [
@@ -48,7 +49,7 @@
       "role": "Athlete Recruiting Platform",
       "dates": "May 2025 - May 2026",
       "bullets": [
-        "Built Next.js/TypeScript recruiting and admin apps with athlete discovery, verification, moderation, Stripe subscriptions, and signed webhooks; enforced <b>14 PostgreSQL row-level security policies</b> and AES-256-GCM message encryption."
+        "Built Next.js/TypeScript recruiting apps with discovery, moderation, Stripe subscriptions, and signed webhooks; enforced <b>14 PostgreSQL row-level security policies</b> and AES-256-GCM encryption."
       ]
     }
   ],
@@ -69,7 +70,7 @@
     ],
     [
       "Frameworks & Data",
-      "React, React Native, Next.js, Electron, SQLite, PostgreSQL, MariaDB/MySQL, REST APIs"
+      "React, React Native, Next.js, Electron, SQLite, PostgreSQL, MySQL, REST APIs"
     ],
     [
       "Security & Testing",
